@@ -1,0 +1,3 @@
+[submodule "Hardware/MegaMouse/Libraries/kenwoodfox-kicad-libraries"]
+	path = Hardware/MegaMouse/Libraries/kenwoodfox-kicad-libraries
+	url = https://github.com/KenwoodFox/kenwoodfox-kicad-libraries.git
