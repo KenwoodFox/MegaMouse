@@ -414,6 +414,14 @@
     [
       "cb242f39-3922-44b0-8f13-dded6a2d135b",
       ""
+    ],
+    [
+      "cab2ae08-2794-43d3-b90a-39adfeeefd96",
+      "LeftMotor"
+    ],
+    [
+      "f3134389-3b86-403d-ae8e-c46efd53e738",
+      "RightMotor"
     ]
   ],
   "text_variables": {}
