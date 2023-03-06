@@ -598,10 +598,10 @@
   )
 
   (symbol (lib_id "Display_Character:HDSP-7803") (at 34.925 34.925 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom yes) (on_board yes)
     (uuid 07d9b08c-1968-419d-8cab-af1700401c87)
-    (property "Reference" "U102" (id 0) (at 34.925 16.51 0))
-    (property "Value" "HDSP-7803" (id 1) (at 34.925 19.05 0))
+    (property "Reference" "U102" (id 0) (at 34.925 20.955 0))
+    (property "Value" "STATE" (id 1) (at 34.925 48.895 0))
     (property "Footprint" "Display_7Segment:HDSP-7801" (id 2) (at 34.925 48.895 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -853,7 +853,7 @@
       (reference "U101") (unit 1) (value "ATmega328P-A") (footprint "Package_QFP:TQFP-32_7x7mm_P0.8mm")
     )
     (path "/07d9b08c-1968-419d-8cab-af1700401c87"
-      (reference "U102") (unit 1) (value "HDSP-7803") (footprint "Display_7Segment:HDSP-7801")
+      (reference "U102") (unit 1) (value "STATE") (footprint "Display_7Segment:HDSP-7801")
     )
     (path "/cab2ae08-2794-43d3-b90a-39adfeeefd96/4c257885-dae9-4de1-8723-d1220bd3380a"
       (reference "U201") (unit 1) (value "DRV8871DDA") (footprint "Package_SO:Texas_HTSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.4x3.1mm_ThermalVias")
