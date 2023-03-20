@@ -1,4 +1,5 @@
 (fp_lib_table
   (lib (name "MegaMouse")(type "KiCad")(uri "${KIPRJMOD}/Libraries/MegaMouse/MegaMouse.pretty")(options "")(descr ""))
   (lib (name "Panelization")(type "KiCad")(uri "${KIPRJMOD}/Libraries/Panelization.pretty")(options "")(descr ""))
+  (lib (name "KenwoodFox")(type "KiCad")(uri "${KIPRJMOD}/Libraries/kenwoodfox-kicad-libraries/footprints/KenwoodFox.pretty")(options "")(descr ""))
 )
