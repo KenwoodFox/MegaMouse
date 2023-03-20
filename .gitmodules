@@ -1,3 +1,6 @@
 [submodule "Hardware/MegaMouse/Libraries/kenwoodfox-kicad-libraries"]
 	path = Hardware/MegaMouse/Libraries/kenwoodfox-kicad-libraries
 	url = https://github.com/KenwoodFox/kenwoodfox-kicad-libraries.git
+[submodule "Hardware/MegaMouse/Libraries/Panelization.pretty"]
+	path = Hardware/MegaMouse/Libraries/Panelization.pretty
+	url = https://github.com/madworm/Panelization.pretty
