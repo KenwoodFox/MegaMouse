@@ -33,9 +33,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 3.0,
+          "height": 6.0,
+          "width": 6.0
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -422,6 +422,18 @@
     [
       "f3134389-3b86-403d-ae8e-c46efd53e738",
       "RightMotor"
+    ],
+    [
+      "078d0145-3523-4341-ae01-8b2b5c73f66a",
+      "MCU"
+    ],
+    [
+      "0db8d490-e421-418e-81d3-9770b4ca9317",
+      "Power"
+    ],
+    [
+      "15cf0a12-7ae2-4a92-a2cb-9d52cdb2502c",
+      "Programmer"
     ]
   ],
   "text_variables": {}
