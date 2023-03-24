@@ -1,0 +1,125 @@
+name: Hardware Workflow
+
+on:
+  push:
+    branches:
+      - "main"
+    tags:
+      - "*"
+  pull_request:
+    paths:
+      - "Hardware/**"
+      - "Docs/**"
+
+jobs:
+  KiCad_Hardware:
+    runs-on: ubuntu-latest
+    name: KiCad Hardware
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          submodules: true
+
+      - uses: INTI-CMNB/KiBot@v2_k6
+        with:
+          # Config file
+          config: Hardware/config.kibot.yaml
+          # Prefix for output in config file.
+          dir: _hardwareOutput
+
+          # Hardware Files
+          schema: "Hardware/MegaMouse/MegaMouse.kicad_sch"
+          board: "Hardware/MegaMouse/MegaMouse.kicad_pcb"
+
+      - name: upload results
+        uses: actions/upload-artifact@v2
+        with:
+          name: Board-Hardware
+          path: _hardwareOutput
+
+      - name: Discord notification if failed
+        if: ${{ failure() }}
+        uses: appleboy/discord-action@master
+        with:
+          webhook_id: ${{ secrets.WEBHOOK_ID }}
+          webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
+          args: "Building new board failed, most likely a DRC check."
+
+  dev-publish:
+    # publish only to devs
+    runs-on: ubuntu-latest
+    name: Dev-Publish
+    needs: [make_docs, KiCad_Hardware]
+
+    steps:
+      # Download artifacts
+      - uses: actions/download-artifact@v2
+        with:
+          name: Board-Manual
+
+      - uses: actions/download-artifact@v2
+        with:
+          name: Board-Hardware
+
+      - name: send custom message with args
+        uses: appleboy/discord-action@master
+        with:
+          webhook_id: ${{ secrets.WEBHOOK_ID }}
+          webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
+          file: "Board-Manual.pdf"
+          args: Display Board Just got an update!
+
+      - name: send custom message with args
+        uses: appleboy/discord-action@master
+        with:
+          webhook_id: ${{ secrets.WEBHOOK_ID }}
+          webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
+          file: "MegaMouse-3D_top.png"
+
+  publish:
+    # Only run on tags
+    if: github.event_name == 'push' && contains(github.ref, 'refs/tags/')
+    runs-on: ubuntu-latest
+    name: Publish
+    needs: [KiCad_Hardware]
+
+    steps:
+      # Be in our repo
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      # Download artifacts
+      - uses: actions/download-artifact@v2
+        with:
+          name: Board-Manual
+
+      - uses: actions/download-artifact@v2
+        with:
+          name: Board-Hardware
+
+      - run: mkdir -p _staging/
+
+      - run: cp *.pdf _staging/
+
+      - run: cp *.step _staging/
+
+      # Copy CDR, PDR
+      - run: cp Team\ Files/*.pdf _staging/
+
+      # Copy gerbers
+      - run: cp PCBWay/*.zip _staging/Board-$(git rev-parse --short HEAD)-PCBWay.zip
+      - run: cp JLCPCB/*.zip _staging/Board-$(git rev-parse --short HEAD)-JLCPCB.zip
+
+      - name: Upload Docs to release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: "_staging/*"
+          tag: ${{ github.ref }}
+          overwrite: true
+          prerelease: true
+          body: "Kitsune Scientific, Automated with github ci/cd."
+          file_glob: true
