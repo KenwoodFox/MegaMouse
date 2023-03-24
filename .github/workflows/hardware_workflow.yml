@@ -22,8 +22,9 @@ jobs:
           fetch-depth: 0
           submodules: true
 
-      - uses: INTI-CMNB/KiBot@v2
+      - uses: INTI-CMNB/KiBot@v2_dk6
         with:
+          quickstart: YES
           # Config file
           config: Hardware/config.kibot.yaml
           # Prefix for output in config file.
