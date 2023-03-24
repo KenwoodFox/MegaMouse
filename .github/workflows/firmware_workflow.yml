@@ -72,22 +72,22 @@ jobs:
       - name: Run Delinter
         run: cd Firmware && pio check
 
-  dev-publish:
-    # publish only to devs
-    runs-on: ubuntu-latest
-    name: Dev-Publish
-    needs: [make_firmware]
+  # dev-publish:
+  #   # publish only to devs
+  #   runs-on: ubuntu-latest
+  #   name: Dev-Publish
+  #   needs: [make_firmware]
 
-    steps:
-      # Download artifacts
-      - uses: actions/download-artifact@v2
-        with:
-          name: Binaries
+  #   steps:
+  #     # Download artifacts
+  #     - uses: actions/download-artifact@v2
+  #       with:
+  #         name: Binaries
 
-      - name: send custom message with args
-        uses: appleboy/discord-action@master
-        with:
-          webhook_id: ${{ secrets.WEBHOOK_ID }}
-          webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
-          file: "firmware.hex"
-          args: "New firmware for MegaMouse board!"
+  #     - name: send custom message with args
+  #       uses: appleboy/discord-action@master
+  #       with:
+  #         webhook_id: ${{ secrets.WEBHOOK_ID }}
+  #         webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
+  #         file: "firmware.hex"
+  #         args: "New firmware for MegaMouse board!"
