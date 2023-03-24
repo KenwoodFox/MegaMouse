@@ -51,7 +51,7 @@ jobs:
     # publish only to devs
     runs-on: ubuntu-latest
     name: Dev-Publish
-    needs: [make_docs, KiCad_Hardware]
+    needs: [KiCad_Hardware]
 
     steps:
       # Download artifacts
