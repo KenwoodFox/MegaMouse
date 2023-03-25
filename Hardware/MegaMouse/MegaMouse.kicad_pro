@@ -450,5 +450,10 @@
       "Upper Board"
     ]
   ],
-  "text_variables": {}
+  "text_variables": {
+    "FULL_REVISION": "eff2a77",
+    "ISSUE": "2023-03-25",
+    "KENWOODFOX_3DMODELS": "Hardware/MegaMouse/Libraries/kenwoodfox-kicad-libraries/3d",
+    "REVISION": "eff2a77"
+  }
 }

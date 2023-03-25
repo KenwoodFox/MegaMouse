@@ -4,6 +4,14 @@
 
   (paper "A4")
 
+  (title_block
+    (title "MegaMouse")
+    (date "${ISSUE}")
+    (rev "${REVISION}")
+    (company "Kitsune Scientific")
+    (comment 4 "Release: ${FULL_REVISION}")
+  )
+
   (lib_symbols
     (symbol "Connector:Conn_01x05_Male" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (id 0) (at 0 7.62 0)

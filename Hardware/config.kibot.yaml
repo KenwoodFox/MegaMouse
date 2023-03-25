@@ -3,7 +3,7 @@ kibot:
 # Look into pcb_replace, looks sick! Also sch_replace
 
 preflight:
-  run_erc: yes
+  run_erc: false
   update_xml: true
   run_drc: false
   check_zone_fills: false
@@ -49,10 +49,12 @@ outputs:
     type: render_3d
     options:
       ray_tracing: true
-      rotate_x: -1
-      rotate_y: 2
-      move_x: 1
-      zoom: 10
+      rotate_z: 22
+      rotate_x: 4
+      rotate_y: 0
+      move_x: 0
+      move_y: 1
+      zoom: 6
       wait_render: 50
 
   # ======

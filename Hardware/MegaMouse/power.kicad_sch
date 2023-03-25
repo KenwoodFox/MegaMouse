@@ -5,10 +5,10 @@
   (paper "A4")
 
   (title_block
-    (title "Inverted Pendulum Controller")
+    (title "MegaMouse")
     (date "${ISSUE}")
     (rev "${REVISION}")
-    (company "SNHU")
+    (company "Kitsune Scientific")
     (comment 4 "Release: ${FULL_REVISION}")
   )
 
