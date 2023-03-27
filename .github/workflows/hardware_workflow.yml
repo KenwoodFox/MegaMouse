@@ -58,19 +58,7 @@ jobs:
       # Download artifacts
       - uses: actions/download-artifact@v2
         with:
-          name: Board-Manual
-
-      - uses: actions/download-artifact@v2
-        with:
           name: Board-Hardware
-
-      - name: send custom message with args
-        uses: appleboy/discord-action@master
-        with:
-          webhook_id: ${{ secrets.WEBHOOK_ID }}
-          webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
-          file: "Board-Manual.pdf"
-          args: Display Board Just got an update!
 
       - name: send custom message with args
         uses: appleboy/discord-action@master
@@ -93,10 +81,6 @@ jobs:
           fetch-depth: 0
 
       # Download artifacts
-      - uses: actions/download-artifact@v2
-        with:
-          name: Board-Manual
-
       - uses: actions/download-artifact@v2
         with:
           name: Board-Hardware
