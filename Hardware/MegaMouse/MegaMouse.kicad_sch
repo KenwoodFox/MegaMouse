@@ -1109,6 +1109,18 @@
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid 6ac11ebb-3776-4a3e-9740-3a090817163e)
     )
+    (pin "CLOCK_OUT" output (at 134.62 104.14 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid 7527a6df-d8d9-4706-bd23-340e665c3513)
+    )
+    (pin "DATA_OUT" output (at 134.62 99.06 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid bdd26fca-22bf-4322-bb88-49611d25c3f1)
+    )
+    (pin "LATCH_OUT" output (at 134.62 101.6 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid c6b9d898-eb4f-4961-9767-e1acffcbd5fd)
+    )
   )
 
   (sheet (at 250.825 15.24) (size 31.115 19.05) (fields_autoplaced)
@@ -1348,14 +1360,8 @@
     (path "/078d0145-3523-4341-ae01-8b2b5c73f66a/d0a4badf-40d2-4bbb-84c7-0cddfdfcb3b3"
       (reference "#PWR0412") (unit 1) (value "GND") (footprint "")
     )
-    (path "/078d0145-3523-4341-ae01-8b2b5c73f66a/ce7e64b0-4bb4-482b-abb0-fe1513ed3046"
-      (reference "#PWR0413") (unit 1) (value "GND") (footprint "")
-    )
     (path "/078d0145-3523-4341-ae01-8b2b5c73f66a/9b499c83-7dcf-4728-831a-283f4982f742"
       (reference "#PWR0414") (unit 1) (value "+5V") (footprint "")
-    )
-    (path "/078d0145-3523-4341-ae01-8b2b5c73f66a/0d041e25-efa0-49c9-82a3-ae5142e4d930"
-      (reference "#PWR0415") (unit 1) (value "+5V") (footprint "")
     )
     (path "/0db8d490-e421-418e-81d3-9770b4ca9317/736ccc42-5777-463a-8af5-234b574964de"
       (reference "#PWR0501") (unit 1) (value "GND") (footprint "")
@@ -1365,9 +1371,6 @@
     )
     (path "/0db8d490-e421-418e-81d3-9770b4ca9317/a8dff686-8eee-49bb-9cfd-9aaef14e13dd"
       (reference "#PWR0503") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/0db8d490-e421-418e-81d3-9770b4ca9317/70ddc72d-731f-472e-a055-cb8fd5161910"
-      (reference "#PWR0504") (unit 1) (value "GND") (footprint "")
     )
     (path "/0db8d490-e421-418e-81d3-9770b4ca9317/25c08e8c-098f-4289-adb3-17e47c540648"
       (reference "#PWR0505") (unit 1) (value "GND") (footprint "")
@@ -1487,16 +1490,13 @@
       (reference "C402") (unit 1) (value "100nF") (footprint "Capacitor_SMD:C_0805_2012Metric")
     )
     (path "/078d0145-3523-4341-ae01-8b2b5c73f66a/9cbf446e-0d6d-4b5b-973c-005ac9ffac8f"
-      (reference "C403") (unit 1) (value "22pf") (footprint "Capacitor_SMD:C_0805_2012Metric")
+      (reference "C403") (unit 1) (value "22pf") (footprint "Capacitor_SMD:C_0201_0603Metric")
     )
     (path "/078d0145-3523-4341-ae01-8b2b5c73f66a/8566dc4a-f173-40fa-a76c-b32246aa000b"
-      (reference "C404") (unit 1) (value "22pf") (footprint "Capacitor_SMD:C_0805_2012Metric")
+      (reference "C404") (unit 1) (value "22pf") (footprint "Capacitor_SMD:C_0201_0603Metric")
     )
     (path "/0db8d490-e421-418e-81d3-9770b4ca9317/fc8b80d8-869e-4f21-8470-92310af28bf6"
       (reference "C501") (unit 1) (value "10uf") (footprint "Capacitor_SMD:CP_Elec_4x3")
-    )
-    (path "/0db8d490-e421-418e-81d3-9770b4ca9317/bd26693c-cc35-4b74-bbe7-17db26da749c"
-      (reference "C502") (unit 1) (value "100nF") (footprint "Capacitor_SMD:C_0805_2012Metric")
     )
     (path "/0db8d490-e421-418e-81d3-9770b4ca9317/51e578f6-6872-4182-8932-f41c27ea7c2f"
       (reference "C503") (unit 1) (value "100nF") (footprint "Capacitor_SMD:C_0805_2012Metric")
@@ -1624,9 +1624,6 @@
     (path "/078d0145-3523-4341-ae01-8b2b5c73f66a/b18a39b4-7f48-40a4-9211-b5f89d42f33a"
       (reference "R405") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0805_2012Metric")
     )
-    (path "/078d0145-3523-4341-ae01-8b2b5c73f66a/57ad8578-d30d-4d65-ad7a-ada6249ff7f8"
-      (reference "R406") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0805_2012Metric")
-    )
     (path "/0db8d490-e421-418e-81d3-9770b4ca9317/7e8ea0d0-c0de-441e-9dba-306503ed970f"
       (reference "R501") (unit 1) (value "1K") (footprint "Resistor_SMD:R_0805_2012Metric")
     )
@@ -1658,10 +1655,7 @@
       (reference "SW401") (unit 1) (value "RESET") (footprint "Button_Switch_THT:SW_PUSH_6mm_H5mm")
     )
     (path "/078d0145-3523-4341-ae01-8b2b5c73f66a/cd883e07-6a1e-4447-9b7b-5d340c6e8626"
-      (reference "SW402") (unit 1) (value "START_SW") (footprint "Button_Switch_THT:SW_PUSH_6mm_H5mm")
-    )
-    (path "/078d0145-3523-4341-ae01-8b2b5c73f66a/1a5a457f-672e-40cc-b8e9-774174146551"
-      (reference "SW403") (unit 1) (value "STOP/MODE_SW") (footprint "Button_Switch_THT:SW_PUSH_6mm_H5mm")
+      (reference "SW402") (unit 1) (value "START/MODE") (footprint "Button_Switch_THT:SW_Tactile_SKHH_Angled")
     )
     (path "/0db8d490-e421-418e-81d3-9770b4ca9317/f4ecfbab-7766-44c2-87ef-aab75c02cd91"
       (reference "SW501") (unit 1) (value "PWR") (footprint "KenwoodFox:EG1218")
