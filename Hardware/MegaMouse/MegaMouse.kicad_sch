@@ -946,7 +946,7 @@
   (symbol (lib_id "power:GND") (at 32.385 50.165 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid a1a740b8-b765-4086-abec-a1b3f66c4b81)
-    (property "Reference" "#PWR?" (id 0) (at 32.385 56.515 0)
+    (property "Reference" "#PWR0114" (id 0) (at 32.385 56.515 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 32.385 53.975 0))
@@ -1044,7 +1044,7 @@
   (symbol (lib_id "power:GND") (at 32.385 38.1 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid dc12de0e-1f5c-4688-af59-4ed5512bcb15)
-    (property "Reference" "#PWR?" (id 0) (at 32.385 44.45 0)
+    (property "Reference" "#PWR0113" (id 0) (at 32.385 44.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 32.385 41.91 0))
@@ -1270,6 +1270,12 @@
     (path "/d304bd62-eacb-4068-b8e8-c3acddcce127"
       (reference "#PWR0112") (unit 1) (value "GND") (footprint "")
     )
+    (path "/dc12de0e-1f5c-4688-af59-4ed5512bcb15"
+      (reference "#PWR0113") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/a1a740b8-b765-4086-abec-a1b3f66c4b81"
+      (reference "#PWR0114") (unit 1) (value "GND") (footprint "")
+    )
     (path "/cab2ae08-2794-43d3-b90a-39adfeeefd96/2b30215d-9198-4030-946e-53013b342a31"
       (reference "#PWR0201") (unit 1) (value "+BATT") (footprint "")
     )
@@ -1461,12 +1467,6 @@
     )
     (path "/15cf0a12-7ae2-4a92-a2cb-9d52cdb2502c/b2d85212-141e-4ee5-8bee-9ead437865c1"
       (reference "#PWR0628") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/a1a740b8-b765-4086-abec-a1b3f66c4b81"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/dc12de0e-1f5c-4688-af59-4ed5512bcb15"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
     (path "/0db8d490-e421-418e-81d3-9770b4ca9317/f554d46e-9e95-47d0-a155-9bb74e6558ea"
       (reference "BT501") (unit 1) (value "Cell1") (footprint "Battery:BatteryHolder_MPD_BH-18650-PC2")
