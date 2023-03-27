@@ -25,7 +25,6 @@ jobs:
       - uses: INTI-CMNB/KiBot@v2_dk6
         with:
           quickstart: YES
-          verbose: 3
           # Config file
           config: Hardware/config.kibot.yaml
           # Prefix for output in config file.

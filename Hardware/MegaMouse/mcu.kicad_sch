@@ -1975,7 +1975,7 @@
     (property "Footprint" "Package_QFP:TQFP-32_7x7mm_P0.8mm" (id 2) (at 42.545 79.375 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
-    (property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" (id 3) (at 42.545 79.375 0)
+    (property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf" (id 3) (at 42.545 79.375 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 218386b0-9174-4d2f-99ac-9ac9f080be68))
