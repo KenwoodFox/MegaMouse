@@ -1669,6 +1669,18 @@
     (path "/0db8d490-e421-418e-81d3-9770b4ca9317/f4ecfbab-7766-44c2-87ef-aab75c02cd91"
       (reference "SW501") (unit 1) (value "PWR") (footprint "KenwoodFox:EG1218")
     )
+    (path "/078d0145-3523-4341-ae01-8b2b5c73f66a/ba3673e8-e3b5-467f-b5c8-3760b2110376"
+      (reference "TP401") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_2.0x2.0mm")
+    )
+    (path "/078d0145-3523-4341-ae01-8b2b5c73f66a/f50867ae-4b52-474e-821e-d67546048ce3"
+      (reference "TP402") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_2.0x2.0mm")
+    )
+    (path "/078d0145-3523-4341-ae01-8b2b5c73f66a/cc714ed2-66fb-42de-8946-ba00a5aab15f"
+      (reference "TP403") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_2.0x2.0mm")
+    )
+    (path "/078d0145-3523-4341-ae01-8b2b5c73f66a/9a57fcda-25c1-4572-b048-8d9aaa3ab11b"
+      (reference "TP404") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_2.0x2.0mm")
+    )
     (path "/cab2ae08-2794-43d3-b90a-39adfeeefd96/4c257885-dae9-4de1-8723-d1220bd3380a"
       (reference "U201") (unit 1) (value "DRV8871DDA") (footprint "Package_SO:Texas_HTSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.4x3.1mm_ThermalVias")
     )
