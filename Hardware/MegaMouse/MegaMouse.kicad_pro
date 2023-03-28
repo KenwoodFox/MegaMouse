@@ -484,7 +484,15 @@
     ],
     [
       "bba3cf1b-7655-42d9-87a8-1fb88711e0bf",
-      "IR Sensor"
+      "FL Sensor"
+    ],
+    [
+      "89b89968-f512-4da7-b85a-b0bd7d595b26",
+      "FR Sensor"
+    ],
+    [
+      "e4119054-fd69-4d04-81be-587d775312ca",
+      "FRNT Sensor"
     ]
   ],
   "text_variables": {
