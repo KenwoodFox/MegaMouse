@@ -1171,6 +1171,18 @@
     )
   )
 
+  (sheet (at 193.04 133.985) (size 12.7 10.16) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid bba3cf1b-7655-42d9-87a8-1fb88711e0bf)
+    (property "Sheet name" "IR Sensor" (id 0) (at 193.04 133.2734 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "ir_sensor.kicad_sch" (id 1) (at 193.04 144.7296 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
   (sheet (at 248.92 74.295) (size 33.02 19.05) (fields_autoplaced)
     (stroke (width 0.1524) (type solid) (color 0 0 0 0))
     (fill (color 0 0 0 0.0000))
@@ -1234,6 +1246,7 @@
     (path "/078d0145-3523-4341-ae01-8b2b5c73f66a" (page "4"))
     (path "/0db8d490-e421-418e-81d3-9770b4ca9317" (page "5"))
     (path "/15cf0a12-7ae2-4a92-a2cb-9d52cdb2502c" (page "6"))
+    (path "/bba3cf1b-7655-42d9-87a8-1fb88711e0bf" (page "7"))
   )
 
   (symbol_instances
@@ -1549,6 +1562,9 @@
     (path "/15cf0a12-7ae2-4a92-a2cb-9d52cdb2502c/db612ce0-c876-4472-8ff7-57c111720d10"
       (reference "D603") (unit 1) (value "TX") (footprint "LED_SMD:LED_0805_2012Metric")
     )
+    (path "/bba3cf1b-7655-42d9-87a8-1fb88711e0bf/f80ac57e-4686-488f-a27c-9c22b045a001"
+      (reference "D701") (unit 1) (value "D_Photo") (footprint "LED_THT:LED_D5.0mm_Horizontal_O1.27mm_Z3.0mm_IRBlack")
+    )
     (path "/6078ab87-f88b-4fb5-bc0e-1362b8855326"
       (reference "H101") (unit 1) (value "MountingHole_Pad") (footprint "MountingHole:MountingHole_3mm_Pad")
     )
@@ -1659,6 +1675,30 @@
     )
     (path "/15cf0a12-7ae2-4a92-a2cb-9d52cdb2502c/77483018-7429-4c37-94c3-d0e229ab4453"
       (reference "R608") (unit 1) (value "1K") (footprint "Resistor_SMD:R_0805_2012Metric")
+    )
+    (path "/15cf0a12-7ae2-4a92-a2cb-9d52cdb2502c/33f7973f-e682-4b67-ac9a-a68f88488048"
+      (reference "R609") (unit 1) (value "1K") (footprint "Resistor_SMD:R_0805_2012Metric")
+    )
+    (path "/15cf0a12-7ae2-4a92-a2cb-9d52cdb2502c/9e957fa4-4b7d-407f-a815-ccf11d11bf03"
+      (reference "R610") (unit 1) (value "1K") (footprint "Resistor_SMD:R_0805_2012Metric")
+    )
+    (path "/15cf0a12-7ae2-4a92-a2cb-9d52cdb2502c/1cc15f9f-3e9d-4595-8e31-683dae4e6cbb"
+      (reference "R611") (unit 1) (value "1K") (footprint "Resistor_SMD:R_0805_2012Metric")
+    )
+    (path "/15cf0a12-7ae2-4a92-a2cb-9d52cdb2502c/fc3e3068-ff37-4de4-8b8d-40a7f1a95ff1"
+      (reference "R612") (unit 1) (value "1K") (footprint "Resistor_SMD:R_0805_2012Metric")
+    )
+    (path "/15cf0a12-7ae2-4a92-a2cb-9d52cdb2502c/15859273-e25b-4de9-a85d-9be020ccb78d"
+      (reference "R613") (unit 1) (value "1K") (footprint "Resistor_SMD:R_0805_2012Metric")
+    )
+    (path "/15cf0a12-7ae2-4a92-a2cb-9d52cdb2502c/6115708a-096d-4245-818a-81eb209d8b55"
+      (reference "R614") (unit 1) (value "1K") (footprint "Resistor_SMD:R_0805_2012Metric")
+    )
+    (path "/15cf0a12-7ae2-4a92-a2cb-9d52cdb2502c/fcce9388-132c-44cf-8514-259ec884b73f"
+      (reference "R615") (unit 1) (value "1K") (footprint "Resistor_SMD:R_0805_2012Metric")
+    )
+    (path "/15cf0a12-7ae2-4a92-a2cb-9d52cdb2502c/f7bec54b-f80a-459a-9520-d6ae583bd257"
+      (reference "R616") (unit 1) (value "1K") (footprint "Resistor_SMD:R_0805_2012Metric")
     )
     (path "/078d0145-3523-4341-ae01-8b2b5c73f66a/a7079559-26b6-43bc-86a7-dfee96e5ef94"
       (reference "SW401") (unit 1) (value "RESET") (footprint "Button_Switch_THT:SW_PUSH_6mm_H5mm")
