@@ -11,6 +11,8 @@ on:
       - "Hardware/**"
       - "Docs/**"
 
+permissions: write-all
+
 jobs:
   KiCad_Hardware:
     runs-on: ubuntu-latest
