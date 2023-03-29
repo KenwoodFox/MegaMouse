@@ -496,9 +496,9 @@
     ]
   ],
   "text_variables": {
-    "FULL_REVISION": "eff2a77",
-    "ISSUE": "2023-03-25",
+    "FULL_REVISION": "2d60173",
+    "ISSUE": "2023-03-29",
     "KENWOODFOX_3DMODELS": "Hardware/MegaMouse/Libraries/kenwoodfox-kicad-libraries/3d",
-    "REVISION": "eff2a77"
+    "REVISION": "2d60173"
   }
 }
