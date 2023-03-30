@@ -1916,6 +1916,15 @@
     (path "/15cf0a12-7ae2-4a92-a2cb-9d52cdb2502c/11f17d8e-8ff9-40f9-b6a6-ca43f43d6944"
       (reference "H604") (unit 1) (value "MountingHole_Pad") (footprint "MountingHole:MountingHole_3mm_Pad")
     )
+    (path "/bba3cf1b-7655-42d9-87a8-1fb88711e0bf/572d50a1-b1fb-4941-80fa-5ad5b4c4ef48"
+      (reference "H701") (unit 1) (value "Screw Adjust Hole") (footprint "MountingHole:MountingHole_3mm")
+    )
+    (path "/89b89968-f512-4da7-b85a-b0bd7d595b26/572d50a1-b1fb-4941-80fa-5ad5b4c4ef48"
+      (reference "H801") (unit 1) (value "Screw Adjust Hole") (footprint "MountingHole:MountingHole_3mm")
+    )
+    (path "/e4119054-fd69-4d04-81be-587d775312ca/572d50a1-b1fb-4941-80fa-5ad5b4c4ef48"
+      (reference "H901") (unit 1) (value "Screw Adjust Hole") (footprint "MountingHole:MountingHole_3mm")
+    )
     (path "/71676369-a4f8-4289-852f-5c46386fe532"
       (reference "J101") (unit 1) (value "SHIFT_CONN") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical")
     )
@@ -2073,7 +2082,7 @@
       (reference "TP404") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_2.0x2.0mm")
     )
     (path "/078d0145-3523-4341-ae01-8b2b5c73f66a/efcfe4e7-aa14-4f64-90e2-a0a12be525af"
-      (reference "TP406") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_2.0x2.0mm")
+      (reference "TP405") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_2.0x2.0mm")
     )
     (path "/cab2ae08-2794-43d3-b90a-39adfeeefd96/4c257885-dae9-4de1-8723-d1220bd3380a"
       (reference "U201") (unit 1) (value "DRV8871DDA") (footprint "Package_SO:Texas_HTSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.4x3.1mm_ThermalVias")
