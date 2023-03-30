@@ -2651,7 +2651,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 172.085 111.125 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid efcfe4e7-aa14-4f64-90e2-a0a12be525af)
-    (property "Reference" "TP406" (id 0) (at 177.165 111.125 90)
+    (property "Reference" "TP405" (id 0) (at 177.165 111.125 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TestPoint" (id 1) (at 177.8 112.395 90)
