@@ -23,3 +23,13 @@ Find hardware, software and docs in the directories below!
 │       └── Libraries     # KiCAD libraries
 └── Static                # Static files
 ```
+
+# Tag Naming System
+
+```
+v1.3
+││ │
+││ └─ Intermediete revision (reivew, software, minor change)
+│└─── Major revision (hardware change, incompatable modification)
+└──── Releasable Version
+```
