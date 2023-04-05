@@ -6577,10 +6577,10 @@
       (net 1 "GND") (pinfunction "SHIELD") (pintype "passive") (tstamp a9ce5a01-c09d-47ca-810d-4e97d6777108))
     (pad "S1" thru_hole oval (at 4.32 1.075) (size 1 1.6) (drill oval 0.6 1.2) (layers "*.Cu" "*.Mask")
       (net 1 "GND") (pinfunction "SHIELD") (pintype "passive") (tstamp 4f93bbf1-6f85-4445-bec5-624112c97b15))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_XKB_U262-16XN-4BVC11.wrl"
-      (offset (xyz 0 0 0))
+    (model "${KIPRJMOD}/Libraries/MegaMouse/3D/USBC.STEP"
+      (offset (xyz 0 3.5 1.5))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 180 0 0))
     )
   )
 
