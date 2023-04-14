@@ -6,6 +6,9 @@
 
 // AVR/System
 #include <Arduino.h>
+#include <Arduino_FreeRTOS.h>
+
+// Libs
 #include <Encoder.h>
 
 // Pindefs and misc
@@ -37,6 +40,6 @@ void loop()
         Serial.println(newPosition);
     }
 
-    digitalWrite(LMOT1, HIGH);
-    digitalWrite(LMOT2, LOW);
+    analogWrite(LMOT1, 120);
+    analogWrite(LMOT2, 0);
 }
