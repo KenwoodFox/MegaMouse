@@ -10200,6 +10200,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model "${KIPRJMOD}/Libraries/MegaMouse/3D/Bridge.step"
+      (offset (xyz 5 47.5 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (footprint "Capacitor_SMD:CP_Elec_4x3" (layer "F.Cu")
