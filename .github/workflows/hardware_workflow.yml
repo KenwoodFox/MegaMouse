@@ -1,4 +1,9 @@
-name: Hardware Workflow
+name: Hardware
+
+permissions:
+  contents: write
+  actions: read
+  checks: write
 
 on:
   push:
@@ -9,17 +14,16 @@ on:
   pull_request:
     paths:
       - "Hardware/**"
-      - "Docs/**"
+      - ".github/workflows/**"
 
-permissions: write-all
-
+#
 jobs:
   KiCad_Hardware:
     runs-on: ubuntu-latest
     name: KiCad Hardware
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
         with:
           fetch-depth: 0
           submodules: true
@@ -32,8 +36,10 @@ jobs:
           dir: _hardwareOutput
 
           # Hardware Files
+          #
           schema: "Hardware/MegaMouse/MegaMouse.kicad_sch"
           board: "Hardware/MegaMouse/MegaMouse.kicad_pcb"
+          #
 
       - name: upload results
         uses: actions/upload-artifact@v2
@@ -41,32 +47,24 @@ jobs:
           name: Board-Hardware
           path: _hardwareOutput
 
-      - name: Discord notification if failed
-        if: ${{ failure() }}
-        uses: appleboy/discord-action@master
-        with:
-          webhook_id: ${{ secrets.WEBHOOK_ID }}
-          webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
-          args: "Building new board failed, most likely a DRC check."
-
   dev-publish:
     # publish only to devs
+    if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     name: Dev-Publish
     needs: [KiCad_Hardware]
 
     steps:
-      # Download artifacts
       - uses: actions/download-artifact@v2
         with:
           name: Board-Hardware
 
-      - name: send custom message with args
-        uses: appleboy/discord-action@master
+      - name: Upload KiCAD Artifacts
+        uses: edunad/actions-image@v2.0.3
         with:
-          webhook_id: ${{ secrets.WEBHOOK_ID }}
-          webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
-          file: "MegaMouse-3D_top.png"
+          path: "*-3D_top.png"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          title: "PCB"
 
   publish:
     # Only run on tags
@@ -77,18 +75,15 @@ jobs:
 
     steps:
       # Be in our repo
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
         with:
           fetch-depth: 0
 
-      # Download artifacts
       - uses: actions/download-artifact@v2
         with:
           name: Board-Hardware
 
       - run: mkdir -p _staging/
-
-      - run: cp *.pdf _staging/
 
       - run: cp *.step _staging/
 
@@ -96,7 +91,7 @@ jobs:
       - run: cp PCBWay/*.zip _staging/Board-$(git rev-parse --short HEAD)-PCBWay.zip
       - run: cp JLCPCB/*.zip _staging/Board-$(git rev-parse --short HEAD)-JLCPCB.zip
 
-      - name: Upload Docs to release
+      - name: Upload artifacts to release
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
@@ -104,5 +99,6 @@ jobs:
           tag: ${{ github.ref }}
           overwrite: true
           prerelease: true
-          body: "Kitsune Scientific, Automated with github ci/cd."
+          #
+          body: "SNHU Robotics, Automated with github ci/cd."
           file_glob: true
