@@ -4,7 +4,11 @@
  * @brief Prototypes for the micromouse algorithm
  */
 
+#ifndef ARDUINO
 #include <cstdint> // This include might have to be moved..
+#else
+#include <Arduino.h>
+#endif
 
 /**
  * @brief All the cardinal directions
@@ -91,4 +95,6 @@ public:
      *
      */
     void setWall(Cardinal dir);
+
+    // Need a point of interest function.
 };

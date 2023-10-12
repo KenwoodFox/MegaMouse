@@ -9,19 +9,24 @@
 #include <Arduino_FreeRTOS.h>
 
 // Libs
-#include <Encoder.h>
+#include "Encoder.h"
+#include "algorithm.h"
 
 // Pindefs and misc
 #include <boardPins.h>
 
 // Objects
 Encoder lEnc(LENCA, LENCB);
+Algorithm alg;
 
 void setup(void)
 {
     // Configure serial
     Serial.begin(115200);
     Serial.println(REV);
+
+    // Ready up fresh algorithm!
+    alg.init();
 
     // Pins
     pinMode(LED_BUILTIN, OUTPUT);
