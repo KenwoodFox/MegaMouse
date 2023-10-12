@@ -24,23 +24,43 @@ int main(int argc, char *argv[])
     {
         if (!API::wallLeft())
         {
+            alg.setWall(alg.mapDir);
+            alg.turnLeft();
             API::turnLeft();
         }
         while (API::wallFront())
         {
+            alg.setWall(alg.mapDir);
+            alg.turnRight();
             API::turnRight();
         }
         API::moveForward();
+        alg.forward();
 
-        // Lets update the simulator display to show what the algorithm sees
+        // Update the simulator with what the robot has in memory
         for (uint8_t x = 0; x < 16; x++)
         {
             for (uint8_t y = 0; y < 16; y++)
             {
                 uint16_t _raw = alg.getRaw(x, y);
-                if (_raw & (1 << 0)) // 0 is North
+                if (_raw & (1 << 15))
                 {
                     API::setWall(x, y, 'n');
+                }
+
+                if (_raw & (1 << 14))
+                {
+                    API::setWall(x, y, 's');
+                }
+
+                if (_raw & (1 << 13))
+                {
+                    API::setWall(x, y, 'e');
+                }
+
+                if (_raw & (1 << 12))
+                {
+                    API::setWall(x, y, 'w');
                 }
             }
         }
