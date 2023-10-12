@@ -9,6 +9,25 @@ void Algorithm::init()
 {
     // maze[4][6] = 0b1111000000000000;
     // maze[4][7] = maze[4][9] | EAST;
+
+    // This should be automatic but, this is kinda the idea we want to target.
+    setValue(0, 0, 16);
+    setValue(1, 0, 15);
+    setValue(2, 0, 14);
+    setValue(3, 0, 13);
+    setValue(4, 0, 12);
+    setValue(5, 0, 11);
+    setValue(6, 0, 10);
+    setValue(7, 0, 9);
+    setValue(8, 0, 8);
+    setValue(8, 1, 7);
+    setValue(8, 2, 6);
+    setValue(8, 3, 5);
+    setValue(8, 4, 4);
+    setValue(8, 5, 3);
+    setValue(8, 6, 2);
+    setValue(8, 7, 1);
+    setValue(8, 8, 0);
 }
 
 uint16_t Algorithm::getRaw(int x, int y)

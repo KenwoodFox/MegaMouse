@@ -18,8 +18,11 @@ enum Cardinal
 
 enum Relative
 {
-    LEFT,
-    RIGHT,
-    BACK,
-    FORWARD,
+    FORWARD,     // Cardinal Forward
+    LEFT,        // Cardinal left
+    RIGHT,       // Cardinal right
+    BACK,        // Cardinal back
+    TURN_LEFT,   // Special shortcut for a quick left turn
+    TURN_RIGHT,  // Special shortcut for a quick right turn
+    TURN_AROUND, // Special shortcut for a quick turnaround
 };

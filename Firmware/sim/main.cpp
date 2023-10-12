@@ -69,6 +69,11 @@ int main(int argc, char *argv[])
                 char _val[3];
                 sprintf(_val, "%d", alg.getValue(x, y));
                 API::setText(x, y, _val);
+
+                if (alg.getValue(x, y) > 0)
+                {
+                    API::setColor(x, y, 'b');
+                }
             }
         }
     }
