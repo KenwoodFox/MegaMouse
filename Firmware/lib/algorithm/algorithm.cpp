@@ -102,3 +102,9 @@ void Algorithm::setWall(Cardinal dir)
 {
     maze[mapPoseX][mapPoseY] = maze[mapPoseX][mapPoseY] | dir;
 }
+
+void Algorithm::markWall(Relative dir)
+{
+    // Mark relative wall
+    ;
+}

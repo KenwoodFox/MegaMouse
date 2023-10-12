@@ -43,6 +43,8 @@ int main(int argc, char *argv[])
             for (uint8_t y = 0; y < 16; y++)
             {
                 uint16_t _raw = alg.getRaw(x, y);
+
+                // Process all cardinals (TODO: clean this up!)
                 if (_raw & (1 << 15))
                 {
                     API::setWall(x, y, 'n');
@@ -62,6 +64,12 @@ int main(int argc, char *argv[])
                 {
                     API::setWall(x, y, 'w');
                 }
+
+                // Process spanning numbers
+                char _val[3];
+                int _num = (_raw >> 8) & 0xff;
+                sprintf(_val, "%d", _num);
+                API::setText(x, y, _val);
             }
         }
     }

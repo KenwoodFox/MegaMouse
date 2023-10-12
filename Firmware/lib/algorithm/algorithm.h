@@ -10,17 +10,7 @@
 #include <Arduino.h>
 #endif
 
-/**
- * @brief All the cardinal directions
- *
- */
-enum Cardinal
-{
-    NORTH = 0b1000000000000000,
-    SOUTH = 0b0100000000000000,
-    EAST = 0b0010000000000000,
-    WEST = 0b0001000000000000,
-};
+#include "data.h"
 
 /**
  * @brief Data format used by the algorithm to store data about tiles
@@ -95,6 +85,12 @@ public:
      *
      */
     void setWall(Cardinal dir);
+
+    /**
+     * @brief Mark a wall using relative chords
+     *
+     */
+    void markWall(Relative dir);
 
     // Need a point of interest function.
 };
