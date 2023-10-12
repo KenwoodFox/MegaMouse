@@ -37,6 +37,10 @@ int main(int argc, char *argv[])
         API::moveForward();
         alg.forward();
 
+        char _buf[20];
+        sprintf(_buf, "Intended dir: %d", alg.getDirection(alg.mapPoseX, alg.mapPoseY, 8, 8));
+        log(_buf);
+
         // Update the simulator with what the robot has in memory
         for (uint8_t x = 0; x < 16; x++)
         {

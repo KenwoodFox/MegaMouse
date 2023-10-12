@@ -5,7 +5,8 @@
  */
 
 #ifndef ARDUINO
-#include <cstdint> // This include might have to be moved..
+#include <cstdint>
+#include <cmath>
 #else
 #include <Arduino.h>
 #endif
@@ -44,6 +45,17 @@ public:
     // Algorithm(/* args */);
 
     void init();
+
+    /**
+     * @brief Find the direction from any two locations in the maze.
+     *
+     * @param startX Where you are (x)
+     * @param startY Where you are (y)
+     * @param endX   Where you want to be (x)
+     * @param endY   Where you want to be (y)
+     * @return Cardinal A direction
+     */
+    Cardinal getDirection(int startX, int startY, int endX, int endY);
 
     /**
      * @brief Get the raw maze data for a specific cell
