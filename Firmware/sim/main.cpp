@@ -67,8 +67,7 @@ int main(int argc, char *argv[])
 
                 // Process spanning numbers
                 char _val[3];
-                int _num = (_raw >> 8) & 0xff;
-                sprintf(_val, "%d", _num);
+                sprintf(_val, "%d", alg.getValue(x, y));
                 API::setText(x, y, _val);
             }
         }

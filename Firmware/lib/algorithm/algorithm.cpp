@@ -21,6 +21,21 @@ uint16_t Algorithm::getRaw(int x, int y)
     return maze[x][y];
 }
 
+uint8_t Algorithm::getValue(int x, int y)
+{
+    // And with 1111 1111 and get only the last 8 bits
+    return maze[x][y] & 0xff;
+}
+
+void Algorithm::setValue(int x, int y, uint8_t value)
+{
+    uint16_t _raw = maze[x][y];
+    _raw &= ~0xff; // Clear lower 16
+    _raw |= value; // Set lower 16
+
+    maze[x][y] = _raw;
+}
+
 void Algorithm::turnLeft()
 {
     // This implementation is messy but, then again, so are enums in cpp
@@ -78,6 +93,9 @@ void Algorithm::turnRight()
 void Algorithm::forward()
 {
     // TODO: add map edge detection
+
+    uint8_t _prev = getValue(mapPoseX, mapPoseY);
+
     switch (mapDir)
     {
     case NORTH:
@@ -96,6 +114,8 @@ void Algorithm::forward()
         mapPoseX -= 1;
         break;
     }
+
+    setValue(mapPoseX, mapPoseY, _prev + 1);
 }
 
 void Algorithm::setWall(Cardinal dir)

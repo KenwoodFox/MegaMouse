@@ -48,11 +48,29 @@ public:
     /**
      * @brief Get the raw maze data for a specific cell
      *
-     * @param x
-     * @param y
+     * @param x X coordinate in maze (0-15)
+     * @param y Y coordinate in maze (0-15)
      * @return uint16_t (maze data unit)
      */
     uint16_t getRaw(int x, int y);
+
+    /**
+     * @brief Get the value of a specific tile
+     *
+     * @param x X coordinate in maze (0-15)
+     * @param y Y coordinate in maze (0-15)
+     * @return uint8_t tile value (unsigned int 8 bits)
+     */
+    uint8_t getValue(int x, int y);
+
+    /**
+     * @brief Set the value of a specific tile
+     *
+     * @param x X coordinate in maze (0-15)
+     * @param y Y coordinate in maze (0-15)
+     * @param value An 8 bit number (0-255)
+     */
+    void setValue(int x, int y, uint8_t value);
 
     /** Motion Commands
      *
