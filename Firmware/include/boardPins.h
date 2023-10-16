@@ -13,4 +13,9 @@
 #define LMOT1 A5 // PC5
 #define LMOT2 5  // PD5
 
+// Shift Pins
+#define DIN_PIN 7
+#define CLK_PIN 9
+#define LAT_PIN 8
+
 #endif
