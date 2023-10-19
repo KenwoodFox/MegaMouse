@@ -894,7 +894,7 @@
       (net 9 "+5V") (pintype "passive") (tstamp 98dcae64-dd90-42e4-8a24-3026fe447df1))
     (pad "2" smd roundrect (at 0.9125 0 140) (size 1.025 1.4) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.243902)
       (net 95 "/LIR") (pintype "passive") (tstamp 8364f73b-1709-45d1-9986-6df9cff1b13a))
-    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl" hide
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1834,10 +1834,10 @@
       (net 96 "/RIR") (pinfunction "2") (pintype "passive") (tstamp 29c3c0a0-f0ba-4d86-aa0a-4c2891ec9fd1))
     (pad "3" smd rect (at -1.8 1 310) (size 1.2 1.2) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 100 "unconnected-(RV801-Pad3)") (pinfunction "3") (pintype "passive+no_connect") (tstamp 650e7e26-78b4-4879-a21a-04395cdec8cc))
-    (model "${KICAD6_3DMODEL_DIR}/Potentiometer_SMD.3dshapes/Potentiometer_Bourns_TC33X_Vertical.wrl"
+    (model "${KIPRJMOD}/Libraries/kenwoodfox-kicad-libraries/3d/trim_pot.wrl"
       (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (scale (xyz 0.32 0.32 0.32))
+      (rotate (xyz 0 0 90))
     )
   )
 
@@ -4116,10 +4116,10 @@
       (net 97 "/FRNT") (pinfunction "2") (pintype "passive") (tstamp 69d55ab7-2201-4775-9fca-9d2f61c2e328))
     (pad "3" smd rect (at -1.8 1 180) (size 1.2 1.2) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 101 "unconnected-(RV901-Pad3)") (pinfunction "3") (pintype "passive+no_connect") (tstamp 5f79f895-515d-4360-be4b-fac5d10b66b8))
-    (model "${KICAD6_3DMODEL_DIR}/Potentiometer_SMD.3dshapes/Potentiometer_Bourns_TC33X_Vertical.wrl"
+    (model "${KIPRJMOD}/Libraries/kenwoodfox-kicad-libraries/3d/trim_pot.wrl"
       (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (scale (xyz 0.32 0.32 0.32))
+      (rotate (xyz 0 0 90))
     )
   )
 
@@ -5572,10 +5572,10 @@
       (net 95 "/LIR") (pinfunction "2") (pintype "passive") (tstamp b97987ea-e6a6-45e8-9e1a-ad3ba98656e9))
     (pad "3" smd rect (at -1.8 1 90) (size 1.2 1.2) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 99 "unconnected-(RV701-Pad3)") (pinfunction "3") (pintype "passive+no_connect") (tstamp 66c3ef9d-6075-4cb6-a101-66e6a6216839))
-    (model "${KICAD6_3DMODEL_DIR}/Potentiometer_SMD.3dshapes/Potentiometer_Bourns_TC33X_Vertical.wrl"
+    (model "${KIPRJMOD}/Libraries/kenwoodfox-kicad-libraries/3d/trim_pot.wrl"
       (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (scale (xyz 0.32 0.32 0.32))
+      (rotate (xyz 0 0 90))
     )
   )
 
@@ -7059,7 +7059,7 @@
       (net 9 "+5V") (pintype "passive") (tstamp 5690e372-c058-4dfb-ab9a-5c4a4e23d310))
     (pad "2" smd roundrect (at 0.9125 0 310) (size 1.025 1.4) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.243902)
       (net 96 "/RIR") (pintype "passive") (tstamp 632dab7a-8766-4d37-8378-7ae7d06d74ae))
-    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl" hide
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -11254,7 +11254,7 @@
       (net 9 "+5V") (pintype "passive") (tstamp 7564f56c-612a-47f6-a70b-06e6b5ff055d))
     (pad "2" smd roundrect (at 0.9125 0 90) (size 1.025 1.4) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.243902)
       (net 97 "/FRNT") (pintype "passive") (tstamp 4fedfda8-c9ac-4fbd-a47b-5d79f7b791fc))
-    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl" hide
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
