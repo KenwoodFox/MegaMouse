@@ -2870,6 +2870,9 @@
     (property "Datasheet" "~" (at 180.34 22.225 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "LCSC#" "C384611" (at 180.34 27.305 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid b96df412-ad60-4642-9d3a-f7addb358220))
     (pin "2" (uuid 2d6bc98b-cc15-4a63-ab8d-9067f9fe2187))
     (instances
