@@ -7,6 +7,10 @@
 
 void Algorithm::init()
 {
+    // These first two walls are always known
+    setAbsWall(WEST, 0, 0);
+    setAbsWall(SOUTH, 0, 0);
+
     // maze[4][6] = 0b1111000000000000;
     // maze[4][7] = maze[4][9] | EAST;
 
@@ -172,6 +176,11 @@ void Algorithm::forward()
 void Algorithm::setWall(Cardinal dir)
 {
     maze[mapPoseX][mapPoseY] = maze[mapPoseX][mapPoseY] | dir;
+}
+
+void Algorithm::setAbsWall(Cardinal dir, uint8_t _px, uint8_t _py)
+{
+    maze[_px][_py] = maze[_px][_py] | dir;
 }
 
 void Algorithm::markWall(Relative dir)

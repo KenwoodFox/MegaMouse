@@ -111,10 +111,20 @@ public:
     void forward();
 
     /**
-     * @brief Set wall in cardinal direction
+     * @brief Set wall in cardinal direction (relative position)
      *
+     * @param dir NSEW
      */
     void setWall(Cardinal dir);
+
+    /**
+     * @brief Set a wall (absolute position)
+     *
+     * @param dir NSEW
+     * @param _px Map pose x
+     * @param _py Map pose y
+     */
+    void setAbsWall(Cardinal dir, uint8_t _px, uint8_t _py);
 
     /**
      * @brief Mark a wall using relative chords
