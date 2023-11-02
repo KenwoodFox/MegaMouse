@@ -22,6 +22,22 @@ int main(int argc, char *argv[])
 
     while (true)
     {
+        // Start by always scanning right and left
+        if (API::wallLeft())
+        {
+            alg.markWall(LEFT);
+        }
+
+        if (API::wallRight())
+        {
+            alg.markWall(RIGHT);
+        }
+
+        if (API::wallFront())
+        {
+            alg.markWall(FORWARD);
+        }
+
         if (!API::wallLeft())
         {
             alg.setWall(alg.mapDir);

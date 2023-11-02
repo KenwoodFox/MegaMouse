@@ -183,8 +183,66 @@ void Algorithm::setAbsWall(Cardinal dir, uint8_t _px, uint8_t _py)
     maze[_px][_py] = maze[_px][_py] | dir;
 }
 
+Cardinal Algorithm::rotate(Relative dir)
+{
+    // This is a messy implementation.. room to optimize!
+    if (dir != FORWARD)
+    {
+        switch (mapDir)
+        {
+        case NORTH:
+            if (dir == LEFT)
+            {
+                return WEST;
+            }
+            else
+            {
+                return EAST;
+            }
+            break;
+
+        case SOUTH:
+            if (dir == LEFT)
+            {
+                return EAST;
+            }
+            else
+            {
+                return WEST;
+            }
+            break;
+
+        case EAST:
+            if (dir == LEFT)
+            {
+                return NORTH;
+            }
+            else
+            {
+                return SOUTH;
+            }
+            break;
+
+        case WEST:
+            if (dir == LEFT)
+            {
+                return SOUTH;
+            }
+            else
+            {
+                return NORTH;
+            }
+            break;
+
+        default:
+            break;
+        }
+    }
+
+    return mapDir; // If we're scanning forward, then there is no change.
+}
+
 void Algorithm::markWall(Relative dir)
 {
-    // Mark relative wall
-    ;
+    setWall(rotate(dir));
 }

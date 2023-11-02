@@ -127,6 +127,14 @@ public:
     void setAbsWall(Cardinal dir, uint8_t _px, uint8_t _py);
 
     /**
+     * @brief Converts a relative dir to a cardinal dir
+     *
+     * @param dir The relative direction you want
+     * @return Cardinal the global direction
+     */
+    Cardinal rotate(Relative dir);
+
+    /**
      * @brief Mark a wall using relative chords
      *
      */
