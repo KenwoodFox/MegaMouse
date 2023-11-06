@@ -19,7 +19,8 @@
 // Objects
 Encoder lEnc(LENCA, LENCB);
 Algorithm alg;
-shiftDisplay disp = shiftDisplay(DIN_PIN, CLK_PIN, LAT_PIN);
+shiftDisplay num = shiftDisplay(DIN_PIN, CLK_PIN, LAT_PIN);   // Position 0 (furthest from chain)
+shiftDisplay lamps = shiftDisplay(DIN_PIN, CLK_PIN, LAT_PIN); // Position 1 (closest)
 
 void setup(void)
 {
@@ -30,8 +31,9 @@ void setup(void)
     // Ready up fresh algorithm!
     alg.init();
 
-    // Initalize display
-    disp.begin();
+    // Initalize displays and lights
+    num.begin();
+    lamps.begin();
 
     // Pins
     pinMode(LED_BUILTIN, OUTPUT);
@@ -52,4 +54,8 @@ void loop()
 
     analogWrite(LMOT1, 120);
     analogWrite(LMOT2, 0);
+
+    num.setDecimal(millis() % 1000 > 500);
+    num.setDigit(l_BLANK);
+    lamps.setDigit(0b00000001);
 }
