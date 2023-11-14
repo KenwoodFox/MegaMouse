@@ -111,11 +111,20 @@ public:
     void forward();
 
     /**
-     * @brief Set wall in cardinal direction (relative position)
+     * @brief Set wall in cardinal direction (absolute position)
      *
      * @param dir NSEW
      */
     void setWall(Cardinal dir);
+
+    /**
+     * @brief Check if wall in direction is occupied or not
+     *
+     * @param dir    Direction to check
+     * @return true  Wall is set
+     * @return false Wall is unset
+     */
+    bool getWall(Cardinal dir);
 
     /**
      * @brief Set a wall (absolute position)

@@ -178,6 +178,14 @@ void Algorithm::setWall(Cardinal dir)
     maze[mapPoseX][mapPoseY] = maze[mapPoseX][mapPoseY] | dir;
 }
 
+bool Algorithm::getWall(Cardinal dir)
+{
+    // We're using dir as an AND mask here,
+    // if the specific bit is set in maze,
+    // it will evaulate to true.
+    return maze[mapPoseX][mapPoseY] & dir;
+}
+
 void Algorithm::setAbsWall(Cardinal dir, uint8_t _px, uint8_t _py)
 {
     maze[_px][_py] = maze[_px][_py] | dir;
