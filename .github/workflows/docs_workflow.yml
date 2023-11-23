@@ -1,0 +1,72 @@
+name: Docs
+
+permissions:
+  contents: write
+
+on:
+  push:
+    branches:
+      - "main"
+    tags:
+      - "*"
+  pull_request:
+    paths:
+      - "Docs/**"
+      - ".github/workflows/**"
+
+#
+jobs:
+  make_docs:
+    runs-on: ubuntu-latest
+    name: Build Docs
+    steps:
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.10"
+          architecture: x64
+
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - run: sudo apt update && sudo apt install texlive-latex-recommended texlive-latex-extra texlive-pictures pandoc rename latexmk
+
+      - name: Install docs requirements
+        run: pip install -r Docs/requirements.txt
+
+      - name: Build pdf
+        run: cd Docs && make
+
+        #
+      - run: mv Docs/_build/latex/*.pdf Docs/_build/latex/MegaMouse.pdf
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: Uniform_and_Style_Guide
+          path: Docs/_build/latex/MegaMouse.pdf
+          #
+
+  publish_docs:
+    # Only run on tags
+    if: github.event_name == 'push' && contains(github.ref, 'refs/tags/')
+    runs-on: ubuntu-latest
+    name: Publish Docs
+    needs: [make_docs]
+
+    steps:
+      - uses: actions/download-artifact@v2
+        with:
+          name: Uniform_and_Style_Guide
+
+      - name: Upload Docs to release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: "*.pdf"
+          tag: ${{ github.ref }}
+          overwrite: true
+          prerelease: true
+          #
+          body: "SNHU Robotics, Automated with github ci/cd."
+          file_glob: true

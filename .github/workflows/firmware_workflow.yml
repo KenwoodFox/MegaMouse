@@ -1,4 +1,4 @@
-name: Firmware Workflow
+name: Firmware
 
 on:
   push:
@@ -9,7 +9,9 @@ on:
   pull_request:
     paths:
       - "Firmware/**"
+      - ".github/workflows/**"
 
+#
 jobs:
   make_firmware:
     runs-on: ubuntu-latest
@@ -18,14 +20,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Cache pip
-        uses: actions/cache@v3
+        uses: actions/cache@v2
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
           restore-keys: |
             ${{ runner.os }}-pip-
       - name: Cache PlatformIO
-        uses: actions/cache@v3
+        uses: actions/cache@v2
         with:
           path: ~/.platformio
           key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
@@ -41,7 +43,7 @@ jobs:
 
       - uses: actions/upload-artifact@v2
         with:
-          name: Binaries
+          name: Display_Binaries
           path: Firmware/.pio/build/ATmega328P/firmware.*
 
   delint:
@@ -51,14 +53,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Cache pip
-        uses: actions/cache@v3
+        uses: actions/cache@v2
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
           restore-keys: |
             ${{ runner.os }}-pip-
       - name: Cache PlatformIO
-        uses: actions/cache@v3
+        uses: actions/cache@v2
         with:
           path: ~/.platformio
           key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
@@ -71,23 +73,4 @@ jobs:
 
       - name: Run Delinter
         run: cd Firmware && pio check
-
-  # dev-publish:
-  #   # publish only to devs
-  #   runs-on: ubuntu-latest
-  #   name: Dev-Publish
-  #   needs: [make_firmware]
-
-  #   steps:
-  #     # Download artifacts
-  #     - uses: actions/download-artifact@v2
-  #       with:
-  #         name: Binaries
-
-  #     - name: send custom message with args
-  #       uses: appleboy/discord-action@master
-  #       with:
-  #         webhook_id: ${{ secrets.WEBHOOK_ID }}
-  #         webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
-  #         file: "firmware.hex"
-  #         args: "New firmware for MegaMouse board!"
+#
