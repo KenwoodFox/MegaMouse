@@ -6,7 +6,7 @@
 
 // AVR/System
 #include <Arduino.h>
-#include <Arduino_FreeRTOS.h>
+// #include <Arduino_FreeRTOS.h>
 
 // Libs
 #include "Encoder.h"
@@ -36,12 +36,14 @@ void setup(void)
     lamps.begin();
 
     // Pins
-    pinMode(LED_BUILTIN, OUTPUT);
     pinMode(LMOT1, OUTPUT);
     pinMode(LMOT2, OUTPUT);
+
+    pinMode(CLK_PIN, OUTPUT);
 }
 
 long oldPosition = -999;
+uint8_t _t = 0;
 
 void loop()
 {
@@ -56,6 +58,28 @@ void loop()
     analogWrite(LMOT2, 0);
 
     num.setDecimal(millis() % 1000 > 500);
-    num.setDigit(l_BLANK);
-    lamps.setDigit(0b00000001);
+    // num.setDigit(_t);
+
+    // 0b00001000 Right turn signal
+    // 0b00000100 Brakes
+    // 0b00000010 Left
+
+    if ((millis() / 1000) % 2 == 0)
+    {
+        lamps.setRaw(0b00001000 | 0b00000010);
+    }
+    else
+    {
+        lamps.setRaw(0);
+    }
+
+    delay(100);
+
+    _t++;
+    if (_t > 10)
+    {
+        _t = 0;
+    }
+
+    Serial.println(_t);
 }
