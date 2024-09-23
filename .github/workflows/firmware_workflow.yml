@@ -41,7 +41,7 @@ jobs:
       - name: Run PlatformIO
         run: cd Firmware && make
 
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v4
         with:
           name: Display_Binaries
           path: Firmware/.pio/build/ATmega328P/firmware.*
