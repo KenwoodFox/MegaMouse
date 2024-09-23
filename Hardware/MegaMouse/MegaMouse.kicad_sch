@@ -1,1826 +1,4550 @@
-(kicad_sch (version 20230121) (generator eeschema)
-
-  (uuid cb242f39-3922-44b0-8f13-dded6a2d135b)
-
-  (paper "A4")
-
-  (title_block
-    (title "MegaMouse")
-    (date "${ISSUE}")
-    (rev "${REVISION}")
-    (company "Kitsune Scientific")
-    (comment 4 "Release: ${FULL_REVISION}")
-  )
-
-  (lib_symbols
-    (symbol "Connector:Conn_01x05_Male" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "J" (at 0 7.62 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "Conn_01x05_Male" (at 0 -7.62 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "connector" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Conn_01x05_Male_1_1"
-        (polyline
-          (pts
-            (xy 1.27 -5.08)
-            (xy 0.8636 -5.08)
-          )
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.27 -2.54)
-            (xy 0.8636 -2.54)
-          )
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.27 0)
-            (xy 0.8636 0)
-          )
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.27 2.54)
-            (xy 0.8636 2.54)
-          )
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.27 5.08)
-            (xy 0.8636 5.08)
-          )
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start 0.8636 -4.953) (end 0 -5.207)
-          (stroke (width 0.1524) (type default))
-          (fill (type outline))
-        )
-        (rectangle (start 0.8636 -2.413) (end 0 -2.667)
-          (stroke (width 0.1524) (type default))
-          (fill (type outline))
-        )
-        (rectangle (start 0.8636 0.127) (end 0 -0.127)
-          (stroke (width 0.1524) (type default))
-          (fill (type outline))
-        )
-        (rectangle (start 0.8636 2.667) (end 0 2.413)
-          (stroke (width 0.1524) (type default))
-          (fill (type outline))
-        )
-        (rectangle (start 0.8636 5.207) (end 0 4.953)
-          (stroke (width 0.1524) (type default))
-          (fill (type outline))
-        )
-        (pin passive line (at 5.08 5.08 180) (length 3.81)
-          (name "Pin_1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 5.08 2.54 180) (length 3.81)
-          (name "Pin_2" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 5.08 0 180) (length 3.81)
-          (name "Pin_3" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 5.08 -2.54 180) (length 3.81)
-          (name "Pin_4" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 5.08 -5.08 180) (length 3.81)
-          (name "Pin_5" (effects (font (size 1.27 1.27))))
-          (number "5" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Device:LED_Dual_AAK" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "D" (at 0 5.715 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "LED_Dual_AAK" (at 0 -6.35 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "LED diode bicolor dual" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Dual LED, common cathode on pin 3" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "LED_Dual_AAK_0_1"
-        (circle (center -2.54 0) (radius 0.2794)
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-        (polyline
-          (pts
-            (xy -4.572 0)
-            (xy -2.54 0)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.27 -1.27)
-            (xy -1.27 -3.81)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.27 1.27)
-            (xy -1.27 3.81)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 3.81 -2.54)
-            (xy 1.905 -2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 3.81 2.54)
-            (xy 1.905 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.27 -3.81)
-            (xy 1.27 -1.27)
-            (xy -1.27 -2.54)
-            (xy 1.27 -3.81)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.27 1.27)
-            (xy 1.27 3.81)
-            (xy -1.27 2.54)
-            (xy 1.27 1.27)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 2.032 2.54)
-            (xy -2.54 2.54)
-            (xy -2.54 -2.54)
-            (xy 2.032 -2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 2.032 5.08)
-            (xy 3.556 6.604)
-            (xy 2.794 6.604)
-            (xy 3.556 6.604)
-            (xy 3.556 5.842)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 3.302 4.064)
-            (xy 4.826 5.588)
-            (xy 4.064 5.588)
-            (xy 4.826 5.588)
-            (xy 4.826 4.826)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (circle (center 0 0) (radius 4.572)
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-      )
-      (symbol "LED_Dual_AAK_1_1"
-        (pin input line (at 7.62 2.54 180) (length 3.81)
-          (name "A1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at 7.62 -2.54 180) (length 3.81)
-          (name "A2" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at -7.62 0 0) (length 3.048)
-          (name "K" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Device:R_Small" (pin_numbers hide) (pin_names (offset 0.254) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "R" (at 0.762 0.508 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Value" "R_Small" (at 0.762 -1.016 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "R resistor" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Resistor, small symbol" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "R_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "R_Small_0_1"
-        (rectangle (start -0.762 1.778) (end 0.762 -1.778)
-          (stroke (width 0.2032) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "R_Small_1_1"
-        (pin passive line (at 0 2.54 270) (length 0.762)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -2.54 90) (length 0.762)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "GND_4" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -6.35 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "GND_4" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "global power" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "GND_4_0_1"
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 -1.27)
-            (xy 1.27 -1.27)
-            (xy 0 -2.54)
-            (xy -1.27 -1.27)
-            (xy 0 -1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "GND_4_1_1"
-        (pin power_in line (at 0 0 270) (length 0) hide
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Mechanical:MountingHole_Pad" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "H" (at 0 6.35 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "MountingHole_Pad" (at 0 4.445 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "mounting hole" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Mounting Hole with connection" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "MountingHole*Pad*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "MountingHole_Pad_0_1"
-        (circle (center 0 1.27) (radius 1.27)
-          (stroke (width 1.27) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "MountingHole_Pad_1_1"
-        (pin input line (at 0 -2.54 90) (length 2.54)
-          (name "1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "power:+5V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "+5V" (at 0 3.556 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "global power" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"+5V\"" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "+5V_0_1"
-        (polyline
-          (pts
-            (xy -0.762 1.27)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 2.54)
-            (xy 0.762 1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "+5V_1_1"
-        (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+5V" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -6.35 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "GND" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "global power" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "GND_0_1"
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 -1.27)
-            (xy 1.27 -1.27)
-            (xy 0 -2.54)
-            (xy -1.27 -1.27)
-            (xy 0 -1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "GND_1_1"
-        (pin power_in line (at 0 0 270) (length 0) hide
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-  )
-
-
-  (wire (pts (xy 166.37 123.825) (xy 190.5 123.825))
-    (stroke (width 0) (type default))
-    (uuid 011b0520-cd2c-44d0-9cd0-dfead24c21e4)
-  )
-  (wire (pts (xy 32.385 79.375) (xy 32.385 81.28))
-    (stroke (width 0) (type default))
-    (uuid 0163f805-90b8-4a24-b4cb-a57934712e7b)
-  )
-  (wire (pts (xy 119.38 75.565) (xy 134.62 75.565))
-    (stroke (width 0) (type default))
-    (uuid 019db0ea-cc69-491b-8d65-51b7e9d660a2)
-  )
-  (wire (pts (xy 166.37 78.74) (xy 175.26 78.74))
-    (stroke (width 0) (type default))
-    (uuid 0614fbc6-4c1b-48a6-8e68-b4632f10199e)
-  )
-  (wire (pts (xy 166.37 128.905) (xy 190.5 128.905))
-    (stroke (width 0) (type default))
-    (uuid 07ed28b5-08e8-4ed1-85f1-d0f71e110aab)
-  )
-  (wire (pts (xy 166.37 114.935) (xy 188.595 114.935))
-    (stroke (width 0) (type default))
-    (uuid 0a6b1004-7cc7-45db-9335-bbcd8e5d88b3)
-  )
-  (wire (pts (xy 32.385 50.165) (xy 32.385 47.625))
-    (stroke (width 0) (type default))
-    (uuid 0c92fb9c-385b-4499-870a-fefb4c082fc2)
-  )
-  (wire (pts (xy 67.31 50.165) (xy 57.785 50.165))
-    (stroke (width 0) (type default))
-    (uuid 0cc03ee3-93d3-4880-bc75-1faafbb6b19c)
-  )
-  (wire (pts (xy 32.385 38.1) (xy 32.385 35.56))
-    (stroke (width 0) (type default))
-    (uuid 0cf59fbe-aede-4b6f-bb31-c58a65665d67)
-  )
-  (wire (pts (xy 32.385 67.945) (xy 32.385 69.215))
-    (stroke (width 0) (type default))
-    (uuid 1356d3d4-340f-401b-9a7d-9f8ee2f4c4c9)
-  )
-  (wire (pts (xy 50.165 38.1) (xy 52.705 38.1))
-    (stroke (width 0) (type default))
-    (uuid 20407b46-2bc4-42a5-a11e-3469f61f1b2d)
-  )
-  (wire (pts (xy 166.37 73.66) (xy 175.26 73.66))
-    (stroke (width 0) (type default))
-    (uuid 20f655c7-385e-4a16-8088-1a5a0b9a8252)
-  )
-  (wire (pts (xy 26.035 190.5) (xy 26.035 192.405))
-    (stroke (width 0) (type default))
-    (uuid 2290d685-eb89-44a6-8274-211a5cbb8b28)
-  )
-  (wire (pts (xy 50.165 45.085) (xy 52.705 45.085))
-    (stroke (width 0) (type default))
-    (uuid 2386c28a-db66-4340-9f2e-e3a1d3550ece)
-  )
-  (wire (pts (xy 119.38 80.645) (xy 134.62 80.645))
-    (stroke (width 0) (type default))
-    (uuid 2637cc56-4a1a-4d6e-a55f-813d494a254e)
-  )
-  (wire (pts (xy 190.5 126.365) (xy 166.37 126.365))
-    (stroke (width 0) (type default))
-    (uuid 2716bb03-fb55-4550-a97d-d4a799bed0e6)
-  )
-  (wire (pts (xy 123.825 83.185) (xy 123.825 85.09))
-    (stroke (width 0) (type default))
-    (uuid 27acc39d-2204-4b4d-b572-08c396c05d25)
-  )
-  (wire (pts (xy 243.84 115.57) (xy 252.73 115.57))
-    (stroke (width 0) (type default))
-    (uuid 2d2bf34a-905d-4954-ba4f-bb944189916b)
-  )
-  (wire (pts (xy 166.37 81.28) (xy 175.26 81.28))
-    (stroke (width 0) (type default))
-    (uuid 31a7e1fd-917f-44a5-b333-22e8df4b3142)
-  )
-  (wire (pts (xy 119.38 83.185) (xy 123.825 83.185))
-    (stroke (width 0) (type default))
-    (uuid 325b5e38-1d22-4836-b0e7-b4f958be3987)
-  )
-  (wire (pts (xy 166.37 107.315) (xy 188.595 107.315))
-    (stroke (width 0) (type default))
-    (uuid 3ddd20fb-442e-4bbe-8fb2-c9ac94343bc0)
-  )
-  (wire (pts (xy 166.37 88.265) (xy 188.595 88.265))
-    (stroke (width 0) (type default))
-    (uuid 44c7b9f4-be2e-4d4e-88a2-622349ea4d4f)
-  )
-  (wire (pts (xy 166.37 109.855) (xy 188.595 109.855))
-    (stroke (width 0) (type default))
-    (uuid 483de4d8-965a-45d8-9fd1-3d7e32e682eb)
-  )
-  (wire (pts (xy 243.84 102.235) (xy 252.73 102.235))
-    (stroke (width 0) (type default))
-    (uuid 48bb823d-8b76-4b5e-adf1-dbb791887b49)
-  )
-  (wire (pts (xy 166.37 90.805) (xy 188.595 90.805))
-    (stroke (width 0) (type default))
-    (uuid 53206ded-68c0-444f-85b6-980aeabb409d)
-  )
-  (wire (pts (xy 36.195 190.5) (xy 36.195 192.405))
-    (stroke (width 0) (type default))
-    (uuid 5759c938-5012-425f-a05c-61972d85c697)
-  )
-  (wire (pts (xy 123.19 96.52) (xy 118.745 96.52))
-    (stroke (width 0) (type default))
-    (uuid 58b843b9-5dc8-4545-86af-ed5617f87613)
-  )
-  (wire (pts (xy 27.94 79.375) (xy 32.385 79.375))
-    (stroke (width 0) (type default))
-    (uuid 5fa50626-b007-4322-936e-561b88e79ad6)
-  )
-  (wire (pts (xy 27.94 74.295) (xy 43.18 74.295))
-    (stroke (width 0) (type default))
-    (uuid 6a9bdb79-018c-4d0a-992f-5f50f8b8cb76)
-  )
-  (wire (pts (xy 27.305 100.33) (xy 43.18 100.33))
-    (stroke (width 0) (type default))
-    (uuid 6e9d4f0c-86d0-4e67-acdd-cd09f5f39162)
-  )
-  (wire (pts (xy 119.38 78.105) (xy 134.62 78.105))
-    (stroke (width 0) (type default))
-    (uuid 70835db5-49de-4538-bc9c-09c468f33008)
-  )
-  (wire (pts (xy 118.745 101.6) (xy 134.62 101.6))
-    (stroke (width 0) (type default))
-    (uuid 72656bef-49ed-46be-bf10-2cb3e1ad8536)
-  )
-  (wire (pts (xy 243.84 99.695) (xy 252.73 99.695))
-    (stroke (width 0) (type default))
-    (uuid 73c616d3-9aef-4479-beac-54cbe77ad406)
-  )
-  (wire (pts (xy 50.165 33.02) (xy 52.705 33.02))
-    (stroke (width 0) (type default))
-    (uuid 744009d9-1535-47fd-b329-f8c77fbda4e9)
-  )
-  (wire (pts (xy 243.84 86.36) (xy 252.73 86.36))
-    (stroke (width 0) (type default))
-    (uuid 7694316b-4668-4d99-96ff-6634f244de9c)
-  )
-  (wire (pts (xy 67.31 38.1) (xy 57.785 38.1))
-    (stroke (width 0) (type default))
-    (uuid 77c2357a-ee7d-483c-8f45-299704d01914)
-  )
-  (wire (pts (xy 118.745 106.68) (xy 123.19 106.68))
-    (stroke (width 0) (type default))
-    (uuid 7b96660f-0daa-4dbf-9bb5-40f7d352f720)
-  )
-  (wire (pts (xy 166.37 76.2) (xy 175.26 76.2))
-    (stroke (width 0) (type default))
-    (uuid 7cfd9ec1-73fb-463c-8211-3d7fa598105a)
-  )
-  (wire (pts (xy 27.94 71.755) (xy 43.18 71.755))
-    (stroke (width 0) (type default))
-    (uuid 7fe446be-5b1f-460d-a7d0-819cc693f2e1)
-  )
-  (wire (pts (xy 123.19 106.68) (xy 123.19 108.585))
-    (stroke (width 0) (type default))
-    (uuid 8275c2fb-efc7-49bd-aa7e-243ca68d0b75)
-  )
-  (wire (pts (xy 166.37 93.345) (xy 188.595 93.345))
-    (stroke (width 0) (type default))
-    (uuid 8452809c-0386-4002-aaa7-7e3b20c9ff7f)
-  )
-  (wire (pts (xy 27.305 95.25) (xy 43.18 95.25))
-    (stroke (width 0) (type default))
-    (uuid 8d44dd1d-da86-4160-86a9-4c893fa5e6bb)
-  )
-  (wire (pts (xy 31.75 91.44) (xy 31.75 92.71))
-    (stroke (width 0) (type default))
-    (uuid 91bae438-f911-44ee-90aa-78f9913b176a)
-  )
-  (wire (pts (xy 123.825 73.025) (xy 119.38 73.025))
-    (stroke (width 0) (type default))
-    (uuid 9276e759-fc58-4961-95cd-7dd6fb77a283)
-  )
-  (wire (pts (xy 27.305 97.79) (xy 43.18 97.79))
-    (stroke (width 0) (type default))
-    (uuid 92d09878-cb06-42ad-846e-0e6e99231165)
-  )
-  (wire (pts (xy 32.385 69.215) (xy 27.94 69.215))
-    (stroke (width 0) (type default))
-    (uuid 980dee68-b27a-4d42-bed1-621005461b58)
-  )
-  (wire (pts (xy 50.165 50.165) (xy 52.705 50.165))
-    (stroke (width 0) (type default))
-    (uuid 9891d101-9b96-44bb-96d3-382808465619)
-  )
-  (wire (pts (xy 123.19 95.25) (xy 123.19 96.52))
-    (stroke (width 0) (type default))
-    (uuid 99f62910-60a1-4d64-b40c-ae1865275ab5)
-  )
-  (wire (pts (xy 32.385 35.56) (xy 34.925 35.56))
-    (stroke (width 0) (type default))
-    (uuid a9a6434d-fe0f-4ecf-b901-b2f3b9ec6c2f)
-  )
-  (wire (pts (xy 67.31 33.02) (xy 57.785 33.02))
-    (stroke (width 0) (type default))
-    (uuid afbaa53a-12bc-47d1-9628-a8846b30326c)
-  )
-  (wire (pts (xy 31.75 92.71) (xy 27.305 92.71))
-    (stroke (width 0) (type default))
-    (uuid b18af917-1b5b-4817-9a73-183ad65b8012)
-  )
-  (wire (pts (xy 243.84 88.9) (xy 252.73 88.9))
-    (stroke (width 0) (type default))
-    (uuid b6ce4b43-0495-4676-aebb-811ba5ca0def)
-  )
-  (wire (pts (xy 31.75 102.87) (xy 31.75 104.775))
-    (stroke (width 0) (type default))
-    (uuid b8c57cab-9a60-486a-9709-26dd6ff2a92c)
-  )
-  (wire (pts (xy 166.37 95.885) (xy 188.595 95.885))
-    (stroke (width 0) (type default))
-    (uuid bf50a915-c2c1-436b-974b-a4fbd858c408)
-  )
-  (wire (pts (xy 123.825 71.755) (xy 123.825 73.025))
-    (stroke (width 0) (type default))
-    (uuid c3e25e33-4357-4055-9985-0f0ae7836e53)
-  )
-  (wire (pts (xy 15.875 190.5) (xy 15.875 192.405))
-    (stroke (width 0) (type default))
-    (uuid cbbdee27-d189-4b6f-b473-64dc03575cd3)
-  )
-  (wire (pts (xy 27.94 76.835) (xy 43.18 76.835))
-    (stroke (width 0) (type default))
-    (uuid d0f025b5-0d00-44fa-a7fe-f952b65ce766)
-  )
-  (wire (pts (xy 243.84 113.03) (xy 252.73 113.03))
-    (stroke (width 0) (type default))
-    (uuid d136ca9d-24f3-4f5c-9aa4-a57711c64466)
-  )
-  (wire (pts (xy 27.305 102.87) (xy 31.75 102.87))
-    (stroke (width 0) (type default))
-    (uuid d439f568-09a3-4fda-9459-40a6f31ca869)
-  )
-  (wire (pts (xy 166.37 112.395) (xy 188.595 112.395))
-    (stroke (width 0) (type default))
-    (uuid db8f0a4b-9eee-4f4b-9ef7-996c61a9ebca)
-  )
-  (wire (pts (xy 32.385 47.625) (xy 34.925 47.625))
-    (stroke (width 0) (type default))
-    (uuid de5b1f14-a3ce-425d-b3ac-42e077e22a70)
-  )
-  (wire (pts (xy 118.745 104.14) (xy 134.62 104.14))
-    (stroke (width 0) (type default))
-    (uuid f6d50084-0ed3-4402-ad3c-2f5a3cb6e1f7)
-  )
-  (wire (pts (xy 118.745 99.06) (xy 134.62 99.06))
-    (stroke (width 0) (type default))
-    (uuid f7fb65b8-c6f3-4b12-b69e-b01594144ebe)
-  )
-  (wire (pts (xy 46.355 190.5) (xy 46.355 192.405))
-    (stroke (width 0) (type default))
-    (uuid f8a5c5b9-edad-4523-8d39-f4fa0da61574)
-  )
-  (wire (pts (xy 67.31 45.085) (xy 57.785 45.085))
-    (stroke (width 0) (type default))
-    (uuid fcfd0b57-b952-426b-94f0-15d9118723a6)
-  )
-
-  (label "LIR" (at 175.26 76.2 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 059a00ee-3403-40f5-8d3f-b4f975e1620f)
-  )
-  (label "FRNT" (at 243.84 115.57 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 0e6a4149-d9d5-4ea1-bf20-c971e4a46de3)
-  )
-  (label "BRAKE" (at 67.31 50.165 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 280d8a33-b5ca-4b2e-99e5-e7401f44f7b1)
-  )
-  (label "BRAKE" (at 67.31 38.1 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 3db57735-a8f4-4b3e-8026-8f63fc23ed66)
-  )
-  (label "ENABLE" (at 175.26 73.66 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 3e7eb3cb-39a8-4df7-8354-c8e69de8ee5d)
-  )
-  (label "ENABLE" (at 243.84 99.695 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 5ea783b1-c350-494c-b5bd-c274aa82efbc)
-  )
-  (label "RIR" (at 175.26 81.28 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 64a67633-384f-4ce2-a924-4cdaf771eb61)
-  )
-  (label "L_TURN" (at 190.5 126.365 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 67624b0d-d448-444b-b147-1437f20ea3e7)
-  )
-  (label "L_TURN" (at 67.31 33.02 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 883d39dd-0eca-49b2-baf2-cd060b5fde36)
-  )
-  (label "LIR" (at 243.84 88.9 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 8aefb516-3ddd-4988-b6ee-5522748650b0)
-  )
-  (label "ENABLE" (at 243.84 113.03 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 90570984-18cd-422a-9506-8d48fb3690a8)
-  )
-  (label "BRAKE" (at 190.5 128.905 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 9752f670-59cd-4477-b5fa-540525eb75e0)
-  )
-  (label "RIR" (at 243.84 102.235 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid b3153cbf-b7dd-4c39-95d8-3db12b25bcdd)
-  )
-  (label "ENABLE" (at 243.84 86.36 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid bc5a036a-6b43-4bcc-a6ad-68018bfc6097)
-  )
-  (label "R_TURN" (at 67.31 45.085 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid c578d71c-4a61-42db-a84b-a0fe233ab243)
-  )
-  (label "R_TURN" (at 190.5 123.825 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid daf854f6-6b8d-4f1f-a23b-1997f0bbca8d)
-  )
-  (label "FRNT" (at 175.26 78.74 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid ea60b507-e20d-4a77-a53d-0ba41fd5d4bb)
-  )
-
-  (symbol (lib_id "power:GND") (at 123.19 108.585 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 02f7d830-b149-4bf4-8365-8fe9b46dcee3)
-    (property "Reference" "#PWR0112" (at 123.19 114.935 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 123.19 112.395 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 123.19 108.585 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 123.19 108.585 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid b8bbbb5d-3aea-4f6c-9a56-472a98ea0c42))
-    (instances
-      (project "MegaMouse"
-        (path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
-          (reference "#PWR0112") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole_Pad") (at 46.355 187.96 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 0498b44a-02e6-4167-b27a-04bf22cef299)
-    (property "Reference" "H104" (at 48.895 186.69 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole_Pad" (at 49.53 187.9599 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "MountingHole:MountingHole_3mm_Pad" (at 46.355 187.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 46.355 187.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid d23bb499-87a9-4e5d-94d0-69d05625235d))
-    (instances
-      (project "MegaMouse"
-        (path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
-          (reference "H104") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 32.385 81.28 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 0f540c42-9f87-46a5-8cff-95953fdf9255)
-    (property "Reference" "#PWR0108" (at 32.385 87.63 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 32.385 85.09 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 32.385 81.28 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 32.385 81.28 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e31ab33f-8d05-4958-8bc7-38d2415601b9))
-    (instances
-      (project "MegaMouse"
-        (path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
-          (reference "#PWR0108") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R_Small") (at 55.245 45.085 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 11deebd6-4e1d-45e2-ad52-a4b95be88c24)
-    (property "Reference" "R103" (at 55.245 42.545 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "1K" (at 55.245 45.085 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 55.245 45.085 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 55.245 45.085 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 69216900-dd72-43b8-84d1-d8c4271b4717))
-    (pin "2" (uuid 18948f04-1b3d-4f8a-bc33-0d17bb99aab5))
-    (instances
-      (project "MegaMouse"
-        (path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
-          (reference "R103") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_name "GND_4") (lib_id "power:GND") (at 36.195 192.405 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 207e6a95-9526-4f46-91c4-1cebbc09aa1b)
-    (property "Reference" "#PWR0109" (at 36.195 198.755 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 36.195 196.215 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 36.195 192.405 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 36.195 192.405 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 41a58a97-8b4e-444b-800c-aa3b47900c24))
-    (instances
-      (project "MegaMouse"
-        (path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
-          (reference "#PWR0109") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 31.75 104.775 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 2900cf6b-9e80-498f-a2c9-4e121cb25d9a)
-    (property "Reference" "#PWR0104" (at 31.75 111.125 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 31.75 108.585 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 31.75 104.775 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 31.75 104.775 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid a2590e68-e372-4fe4-a9af-3500a12888e8))
-    (instances
-      (project "MegaMouse"
-        (path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
-          (reference "#PWR0104") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+5V") (at 123.825 71.755 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 3eaf7950-48c9-4556-877b-6ade6dffd68f)
-    (property "Reference" "#PWR0113" (at 123.825 75.565 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 123.825 67.945 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 123.825 71.755 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 123.825 71.755 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid b792d3ed-97b9-4016-a253-8282ae405770))
-    (instances
-      (project "MegaMouse"
-        (path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
-          (reference "#PWR0113") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R_Small") (at 55.245 33.02 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 412f6298-9ff5-4415-94b8-72cb51fdc742)
-    (property "Reference" "R101" (at 55.245 30.48 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "1K" (at 55.245 33.02 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 55.245 33.02 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 55.245 33.02 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid f9e3bce7-d7f7-4525-bd91-4124b8243738))
-    (pin "2" (uuid 8e318cb0-1415-40ea-ad34-df2cdccf159c))
-    (instances
-      (project "MegaMouse"
-        (path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
-          (reference "R101") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector:Conn_01x05_Male") (at 114.3 78.105 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 4e66837d-f125-492e-9ef1-3191c639b946)
-    (property "Reference" "J104" (at 114.935 67.31 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "PROG_CONN" (at 114.935 69.85 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" (at 114.3 78.105 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 114.3 78.105 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 46a8ffbd-303d-4367-8a46-280435f7fb87))
-    (pin "2" (uuid f61d45db-602b-49ea-86c5-2ed0eff9b36b))
-    (pin "3" (uuid 4f0ae4b5-4a66-4cde-b7f1-84e10d59e401))
-    (pin "4" (uuid 82d25703-b1c9-40cf-aaef-a56aace78e7c))
-    (pin "5" (uuid 45cbcf3c-0451-4f70-b91c-60b561bf9d39))
-    (instances
-      (project "MegaMouse"
-        (path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
-          (reference "J104") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+5V") (at 32.385 67.945 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 5c334280-559a-46ed-a0b9-04a4f5afb7c2)
-    (property "Reference" "#PWR0107" (at 32.385 71.755 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 32.385 64.135 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 32.385 67.945 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 32.385 67.945 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 35bee8e6-2860-4e1a-8897-8fc3e2186756))
-    (instances
-      (project "MegaMouse"
-        (path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
-          (reference "#PWR0107") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole_Pad") (at 15.875 187.96 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 6078ab87-f88b-4fb5-bc0e-1362b8855326)
-    (property "Reference" "H101" (at 18.415 186.69 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole_Pad" (at 19.05 187.9599 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "MountingHole:MountingHole_3mm_Pad" (at 15.875 187.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 15.875 187.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid b5ea94fa-448c-4be5-b577-3fc85f856647))
-    (instances
-      (project "MegaMouse"
-        (path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
-          (reference "H101") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_name "GND_4") (lib_id "power:GND") (at 15.875 192.405 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 61b3e416-17da-4157-a570-260e090bcdfc)
-    (property "Reference" "#PWR0101" (at 15.875 198.755 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 15.875 196.215 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 15.875 192.405 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 15.875 192.405 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid dbe1dede-75a5-44b0-9a99-e0ac342ef4d0))
-    (instances
-      (project "MegaMouse"
-        (path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
-          (reference "#PWR0101") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector:Conn_01x05_Male") (at 22.225 97.79 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 71676369-a4f8-4289-852f-5c46386fe532)
-    (property "Reference" "J101" (at 22.86 87.63 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "SHIFT_CONN" (at 22.86 90.17 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" (at 22.225 97.79 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 22.225 97.79 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid f667a665-78d9-4701-aa57-65c147ca6633))
-    (pin "2" (uuid 80562dec-008e-4e19-ac70-dbeb152df3d6))
-    (pin "3" (uuid 5ca69f21-ed38-4b1c-8cf4-7c5f1311ddcf))
-    (pin "4" (uuid 71900fa9-33ec-4b4d-94d1-8d6874a54789))
-    (pin "5" (uuid 7ee11932-8c32-4160-9b05-c193676e2496))
-    (instances
-      (project "MegaMouse"
-        (path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
-          (reference "J101") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector:Conn_01x05_Male") (at 22.86 74.295 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 78c4d644-02a4-410c-a905-7084841c80fc)
-    (property "Reference" "J102" (at 23.495 63.5 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "PROG_CONN" (at 23.495 66.04 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" (at 22.86 74.295 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 22.86 74.295 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 4298d99d-ce4d-4f04-9486-06976bb9d2c8))
-    (pin "2" (uuid 93f436f5-3567-465e-ab3b-52edda923182))
-    (pin "3" (uuid 1cbde64d-f007-4508-9561-d605a7e374cf))
-    (pin "4" (uuid 9db14425-9c0c-4002-9b18-46c332e6b115))
-    (pin "5" (uuid f229be08-5fcf-47c7-a942-6336b9afd804))
-    (instances
-      (project "MegaMouse"
-        (path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
-          (reference "J102") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole_Pad") (at 26.035 187.96 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 8090cf6f-5454-4b1f-8a65-1817431df75e)
-    (property "Reference" "H102" (at 28.575 186.69 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole_Pad" (at 29.21 187.9599 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "MountingHole:MountingHole_3mm_Pad" (at 26.035 187.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 26.035 187.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid be6fc4a2-de34-4ae2-a4e9-180aab5ee0bf))
-    (instances
-      (project "MegaMouse"
-        (path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
-          (reference "H102") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_name "GND_4") (lib_id "power:GND") (at 46.355 192.405 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 8914945c-ed68-425a-b64a-8a74608059f7)
-    (property "Reference" "#PWR0110" (at 46.355 198.755 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 46.355 196.215 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 46.355 192.405 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 46.355 192.405 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e25683ee-c1e0-4c5f-9cfa-145806b4e45f))
-    (instances
-      (project "MegaMouse"
-        (path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
-          (reference "#PWR0110") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:LED_Dual_AAK") (at 42.545 47.625 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 8ed1c7dc-a397-4ebb-878f-88bc55ae0384)
-    (property "Reference" "D102" (at 42.545 53.975 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "RightTail" (at 42.545 56.515 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "MegaMouse:BrakeLight" (at 42.545 47.625 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 42.545 47.625 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid d2429434-6feb-400b-a0fe-257ea52a63d1))
-    (pin "2" (uuid c759eb38-c7c5-41dd-809b-240d7ffa6c24))
-    (pin "3" (uuid 841a11b0-ce7c-49dd-9a5a-a177cc703ffc))
-    (instances
-      (project "MegaMouse"
-        (path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
-          (reference "D102") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+5V") (at 31.75 91.44 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 9205eadb-db9b-4b5c-90eb-11dfb9d8348a)
-    (property "Reference" "#PWR0103" (at 31.75 95.25 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 31.75 87.63 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 31.75 91.44 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 31.75 91.44 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 126c9ab1-ce8c-4a51-b1c4-072c7bc78873))
-    (instances
-      (project "MegaMouse"
-        (path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
-          (reference "#PWR0103") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector:Conn_01x05_Male") (at 113.665 101.6 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 9615da32-019d-46f2-a1f9-ffb7b57d8c9f)
-    (property "Reference" "J103" (at 114.3 91.44 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "SHIFT_CONN" (at 114.3 93.98 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" (at 113.665 101.6 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 113.665 101.6 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid ca0c5ae8-0693-4e7e-a217-b99d1cbcc536))
-    (pin "2" (uuid c06a4f67-c911-48b8-8354-cd798eb57a7d))
-    (pin "3" (uuid 95ea8064-a45a-4c6f-bfbc-5a7d6dfeeb8f))
-    (pin "4" (uuid dd6b436f-4bfa-4459-9852-3c6da8c8b258))
-    (pin "5" (uuid 52a688f4-8373-491d-9ab5-7c344a833674))
-    (instances
-      (project "MegaMouse"
-        (path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
-          (reference "J103") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 32.385 50.165 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid a1a740b8-b765-4086-abec-a1b3f66c4b81)
-    (property "Reference" "#PWR0106" (at 32.385 56.515 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 32.385 53.975 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 32.385 50.165 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 32.385 50.165 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 7fcc7b8b-8543-430a-be92-d977db1db500))
-    (instances
-      (project "MegaMouse"
-        (path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
-          (reference "#PWR0106") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole_Pad") (at 36.195 187.96 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid bc7b7a6c-a791-4213-80c8-3a2d207596eb)
-    (property "Reference" "H103" (at 38.735 186.69 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole_Pad" (at 39.37 187.9599 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "MountingHole:MountingHole_3mm_Pad" (at 36.195 187.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 36.195 187.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid b0eeb922-27a2-47d4-876e-091df0752c41))
-    (instances
-      (project "MegaMouse"
-        (path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
-          (reference "H103") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:LED_Dual_AAK") (at 42.545 35.56 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid ca9b22a2-b92f-47fd-a808-1f1f393a3eb7)
-    (property "Reference" "D101" (at 42.6085 24.13 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "LeftTail" (at 42.6085 26.67 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "MegaMouse:BrakeLight" (at 42.545 35.56 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 42.545 35.56 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid c40a0292-c1bb-45de-a890-66f080f4e2b3))
-    (pin "2" (uuid 7e90564c-7459-4edc-922b-eeca8feeb390))
-    (pin "3" (uuid efc19ae4-23bb-40ea-be68-5f224f1738be))
-    (instances
-      (project "MegaMouse"
-        (path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
-          (reference "D101") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 123.825 85.09 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid d304bd62-eacb-4068-b8e8-c3acddcce127)
-    (property "Reference" "#PWR0114" (at 123.825 91.44 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 123.825 88.9 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 123.825 85.09 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 123.825 85.09 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid db2ef6fe-2105-4b6c-8f6b-955fcd99fc8a))
-    (instances
-      (project "MegaMouse"
-        (path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
-          (reference "#PWR0114") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+5V") (at 123.19 95.25 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid d71924c1-36a2-4d26-8a2d-8564f2ea8b31)
-    (property "Reference" "#PWR0111" (at 123.19 99.06 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 123.19 91.44 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 123.19 95.25 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 123.19 95.25 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid f32d33f3-fa0e-49b6-81cb-fc74963e624c))
-    (instances
-      (project "MegaMouse"
-        (path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
-          (reference "#PWR0111") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_name "GND_4") (lib_id "power:GND") (at 26.035 192.405 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid d757c46a-c627-4cb0-993e-f9b416ea351f)
-    (property "Reference" "#PWR0102" (at 26.035 198.755 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 26.035 196.215 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 26.035 192.405 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 26.035 192.405 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 00f3efc2-58b7-4efa-921a-4e2aa32668b9))
-    (instances
-      (project "MegaMouse"
-        (path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
-          (reference "#PWR0102") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 32.385 38.1 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid dc12de0e-1f5c-4688-af59-4ed5512bcb15)
-    (property "Reference" "#PWR0105" (at 32.385 44.45 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 32.385 41.91 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 32.385 38.1 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 32.385 38.1 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e9f5cf7c-0a73-42b6-98c3-ccd8cbeca7cd))
-    (instances
-      (project "MegaMouse"
-        (path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
-          (reference "#PWR0105") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R_Small") (at 55.245 50.165 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid ed6de547-7294-4ea3-b2b9-b2ce51c30ee8)
-    (property "Reference" "R104" (at 55.245 47.625 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "1K" (at 55.245 50.165 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 55.245 50.165 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 55.245 50.165 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 89d4f7a7-6bdc-4229-a999-db45c63da98c))
-    (pin "2" (uuid 9bacd0ea-3f1d-4324-9e0f-7d100acc9d82))
-    (instances
-      (project "MegaMouse"
-        (path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
-          (reference "R104") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R_Small") (at 55.245 38.1 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid fe48f6dc-8ec8-4a3c-8de0-7dc7d3060555)
-    (property "Reference" "R102" (at 55.245 35.56 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "1K" (at 55.245 38.1 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 55.245 38.1 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 55.245 38.1 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 4d9007da-147f-4e78-8c7a-92a37720dc45))
-    (pin "2" (uuid 0c32d834-066c-4c7f-8334-8995d1ad9aa2))
-    (instances
-      (project "MegaMouse"
-        (path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
-          (reference "R102") (unit 1)
-        )
-      )
-    )
-  )
-
-  (sheet (at 134.62 70.485) (size 31.75 62.23) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 078d0145-3523-4341-ae01-8b2b5c73f66a)
-    (property "Sheetname" "MCU" (at 134.62 69.7734 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "mcu.kicad_sch" (at 134.62 133.2996 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "RST" input (at 134.62 80.645 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 716955ab-b906-4d72-9389-c7673b3ba12c)
-    )
-    (pin "RXD" input (at 134.62 78.105 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 58937592-ab87-4fbe-a494-7b3192615027)
-    )
-    (pin "TXD" output (at 134.62 75.565 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 6ac11ebb-3776-4a3e-9740-3a090817163e)
-    )
-    (pin "CLOCK_OUT" output (at 134.62 104.14 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 7527a6df-d8d9-4706-bd23-340e665c3513)
-    )
-    (pin "DATA_OUT" output (at 134.62 99.06 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid bdd26fca-22bf-4322-bb88-49611d25c3f1)
-    )
-    (pin "LATCH_OUT" output (at 134.62 101.6 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid c6b9d898-eb4f-4961-9767-e1acffcbd5fd)
-    )
-    (pin "R_TURN" output (at 166.37 123.825 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid f0b3a301-a819-4baa-bb66-bc194428d7d4)
-    )
-    (pin "L_TURN" output (at 166.37 126.365 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 067e4e17-c365-4fa9-b603-50538223df8a)
-    )
-    (pin "RIR_IN" input (at 166.37 81.28 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 610af360-d6e6-432e-9ca3-78c5e4a853ad)
-    )
-    (pin "FRNT_IN" input (at 166.37 78.74 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid aaa0bb5f-4546-47da-8e28-af43ac77870e)
-    )
-    (pin "LIR_IN" input (at 166.37 76.2 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid a3cc09bf-2cd1-4d1e-a638-a20d26da6ef0)
-    )
-    (pin "ENABLE" output (at 166.37 73.66 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 36f84b1b-9eef-4aec-87fb-379a82442efb)
-    )
-    (pin "L_ENC_B" input (at 166.37 90.805 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 7028793e-0f08-4d23-a86f-2e7dc6734d71)
-    )
-    (pin "R_ENC_B" input (at 166.37 109.855 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 87c4a075-31b6-41af-a68c-6e348ded1981)
-    )
-    (pin "R_ENC_A" input (at 166.37 107.315 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 6f667479-d332-492a-b40b-4ff4bd682686)
-    )
-    (pin "L_ENC_A" input (at 166.37 88.265 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 0f85a0c7-fe89-42ef-a55f-76ed7ec96cb9)
-    )
-    (pin "BRAKE" output (at 166.37 128.905 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid 9d88b492-48df-4f23-99ed-5bf50dec291c)
-    )
-    (pin "R_MOT_2" output (at 166.37 114.935 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid a0fbd3d2-96f1-4984-bd7a-ee78221e1d8a)
-    )
-    (pin "L_MOT_2" output (at 166.37 95.885 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid f9ed2c49-75e4-4829-b0c3-6258fda098e1)
-    )
-    (pin "L_MOT_1" output (at 166.37 93.345 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid cee184fe-fdd5-4aee-9255-261393a071a5)
-    )
-    (pin "R_MOT_1" output (at 166.37 112.395 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid b8b814fd-8087-4b18-b39e-51934a353900)
-    )
-    (instances
-      (project "MegaMouse"
-        (path "/cb242f39-3922-44b0-8f13-dded6a2d135b" (page "4"))
-      )
-    )
-  )
-
-  (sheet (at 250.825 15.24) (size 31.115 19.05) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 0db8d490-e421-418e-81d3-9770b4ca9317)
-    (property "Sheetname" "Power" (at 250.825 14.5284 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "power.kicad_sch" (at 250.825 34.8746 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (instances
-      (project "MegaMouse"
-        (path "/cb242f39-3922-44b0-8f13-dded6a2d135b" (page "5"))
-      )
-    )
-  )
-
-  (sheet (at 43.18 67.945) (size 26.035 40.005) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 15cf0a12-7ae2-4a92-a2cb-9d52cdb2502c)
-    (property "Sheetname" "Upper Board" (at 43.18 67.2334 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "upperBoard.kicad_sch" (at 43.18 108.5346 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "RXD" input (at 43.18 71.755 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 07f99b97-0c2a-4ba8-afb4-1ed2dc951624)
-    )
-    (pin "TXD" output (at 43.18 76.835 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 3d597875-5e33-405e-b1a9-60f98b46ab42)
-    )
-    (pin "RST" output (at 43.18 74.295 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 73c69e3d-bd3b-466a-84b5-5badf8490e7f)
-    )
-    (pin "CLOCK_IN" input (at 43.18 100.33 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 37b61391-5163-4f3c-ab92-875fa4949545)
-    )
-    (pin "LATCH_IN" input (at 43.18 97.79 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid ff579c73-7c8c-4b7d-a304-b46dff82ef2f)
-    )
-    (pin "DATA_IN" input (at 43.18 95.25 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 7fd4e94b-8c6b-4993-81ca-e895ba257839)
-    )
-    (instances
-      (project "MegaMouse"
-        (path "/cb242f39-3922-44b0-8f13-dded6a2d135b" (page "6"))
-      )
-    )
-  )
-
-  (sheet (at 252.73 97.79) (size 12.7 6.985) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 89b89968-f512-4da7-b85a-b0bd7d595b26)
-    (property "Sheetname" "FR Sensor" (at 252.73 97.0784 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "ir_sensor.kicad_sch" (at 252.73 105.3596 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "SENSE" output (at 252.73 102.235 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 371117e1-c7e9-47b8-8bc6-1b4751411060)
-    )
-    (pin "ENABLE" input (at 252.73 99.695 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 01b8fd34-1fd4-47d3-8c91-6ec9c3159aa2)
-    )
-    (instances
-      (project "MegaMouse"
-        (path "/cb242f39-3922-44b0-8f13-dded6a2d135b" (page "8"))
-      )
-    )
-  )
-
-  (sheet (at 252.73 84.455) (size 12.7 6.985) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid bba3cf1b-7655-42d9-87a8-1fb88711e0bf)
-    (property "Sheetname" "FL Sensor" (at 252.73 83.7434 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "ir_sensor.kicad_sch" (at 252.73 92.0246 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "SENSE" output (at 252.73 88.9 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 31188c9e-e3f9-477b-8eac-5e51bad48a5e)
-    )
-    (pin "ENABLE" input (at 252.73 86.36 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 749d9a7f-e693-4a79-8d0a-cbede247e8e3)
-    )
-    (instances
-      (project "MegaMouse"
-        (path "/cb242f39-3922-44b0-8f13-dded6a2d135b" (page "7"))
-      )
-    )
-  )
-
-  (sheet (at 188.595 86.36) (size 12.7 12.7) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid cab2ae08-2794-43d3-b90a-39adfeeefd96)
-    (property "Sheetname" "LeftMotor" (at 188.595 85.6484 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "motor.kicad_sch" (at 188.595 99.6446 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "EncA" output (at 188.595 88.265 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 4091c609-80f5-4a6b-ae9c-aad4bba24583)
-    )
-    (pin "EncB" output (at 188.595 90.805 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 13f71e25-9866-4d3d-a80c-65b822068d73)
-    )
-    (pin "IN1" input (at 188.595 93.345 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid b5f0e96b-b2e9-4f2f-b9a2-01125b09f738)
-    )
-    (pin "IN2" input (at 188.595 95.885 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 996befde-da43-4904-bc1b-5ca6fc10f712)
-    )
-    (instances
-      (project "MegaMouse"
-        (path "/cb242f39-3922-44b0-8f13-dded6a2d135b" (page "2"))
-      )
-    )
-  )
-
-  (sheet (at 252.73 111.125) (size 12.7 6.985) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid e4119054-fd69-4d04-81be-587d775312ca)
-    (property "Sheetname" "FRNT Sensor" (at 252.73 110.4134 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "ir_sensor.kicad_sch" (at 252.73 118.6946 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "SENSE" output (at 252.73 115.57 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid b0ec8a82-b1c8-4cef-b921-9ddb4516d4de)
-    )
-    (pin "ENABLE" input (at 252.73 113.03 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid d9a8eba7-d740-4925-aa31-f92c136d2f9a)
-    )
-    (instances
-      (project "MegaMouse"
-        (path "/cb242f39-3922-44b0-8f13-dded6a2d135b" (page "9"))
-      )
-    )
-  )
-
-  (sheet (at 188.595 105.41) (size 12.7 12.7) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid f3134389-3b86-403d-ae8e-c46efd53e738)
-    (property "Sheetname" "RightMotor" (at 188.595 104.6984 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "motor.kicad_sch" (at 188.595 118.6946 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (pin "EncA" output (at 188.595 107.315 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 3984ae1e-63db-4e40-83c1-889b0074e50a)
-    )
-    (pin "EncB" output (at 188.595 109.855 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid d4f5b8d7-c67c-4da4-a5f7-8b7a39aae8fd)
-    )
-    (pin "IN1" input (at 188.595 112.395 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid d6d7a152-0e36-4e40-b537-50511b223f87)
-    )
-    (pin "IN2" input (at 188.595 114.935 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 1bdbc499-8d9c-4400-97f1-2647d773e03b)
-    )
-    (instances
-      (project "MegaMouse"
-        (path "/cb242f39-3922-44b0-8f13-dded6a2d135b" (page "3"))
-      )
-    )
-  )
-
-  (sheet_instances
-    (path "/" (page "1"))
-  )
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "cb242f39-3922-44b0-8f13-dded6a2d135b")
+	(paper "A4")
+	(title_block
+		(title "MegaMouse")
+		(date "${ISSUE}")
+		(rev "${REVISION}")
+		(company "Kitsune Scientific")
+		(comment 4 "Release: ${FULL_REVISION}")
+	)
+	(lib_symbols
+		(symbol "Connector:Conn_01x05_Male"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x05_Male"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x05_Male_1_1"
+				(polyline
+					(pts
+						(xy 1.27 -5.08) (xy 0.8636 -5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy 0.8636 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 5.08) (xy 0.8636 5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 0.8636 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 5.207)
+					(end 0 4.953)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin passive line
+					(at 5.08 5.08 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -5.08 180)
+					(length 3.81)
+					(name "Pin_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:LED_Dual_AAK"
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED_Dual_AAK"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Dual LED, common cathode on pin 3"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode bicolor dual"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_Dual_AAK_0_1"
+				(circle
+					(center -2.54 0)
+					(radius 0.2794)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.572 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 -3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 -2.54) (xy 1.905 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 2.54) (xy 1.905 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -3.81) (xy 1.27 -1.27) (xy -1.27 -2.54) (xy 1.27 -3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 3.81) (xy -1.27 2.54) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 2.54) (xy -2.54 2.54) (xy -2.54 -2.54) (xy 2.032 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 5.08) (xy 3.556 6.604) (xy 2.794 6.604) (xy 3.556 6.604) (xy 3.556 5.842)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 4.064) (xy 4.826 5.588) (xy 4.064 5.588) (xy 4.826 5.588) (xy 4.826 4.826)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 4.572)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "LED_Dual_AAK_1_1"
+				(pin input line
+					(at 7.62 2.54 180)
+					(length 3.81)
+					(name "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 7.62 -2.54 180)
+					(length 3.81)
+					(name "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 3.048)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:R_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "R_Small"
+				(at 0.762 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Small_0_1"
+				(rectangle
+					(start -0.762 1.778)
+					(end 0.762 -1.778)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "GND_4"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND_4"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_4_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_4_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:+5V"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+5V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+5V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+5V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+5V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0) hide
+					(name "+5V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 166.37 123.825) (xy 190.5 123.825)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "011b0520-cd2c-44d0-9cd0-dfead24c21e4")
+	)
+	(wire
+		(pts
+			(xy 32.385 79.375) (xy 32.385 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0163f805-90b8-4a24-b4cb-a57934712e7b")
+	)
+	(wire
+		(pts
+			(xy 119.38 75.565) (xy 134.62 75.565)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "019db0ea-cc69-491b-8d65-51b7e9d660a2")
+	)
+	(wire
+		(pts
+			(xy 166.37 78.74) (xy 175.26 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0614fbc6-4c1b-48a6-8e68-b4632f10199e")
+	)
+	(wire
+		(pts
+			(xy 166.37 128.905) (xy 190.5 128.905)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07ed28b5-08e8-4ed1-85f1-d0f71e110aab")
+	)
+	(wire
+		(pts
+			(xy 166.37 114.935) (xy 188.595 114.935)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a6b1004-7cc7-45db-9335-bbcd8e5d88b3")
+	)
+	(wire
+		(pts
+			(xy 32.385 50.165) (xy 32.385 47.625)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c92fb9c-385b-4499-870a-fefb4c082fc2")
+	)
+	(wire
+		(pts
+			(xy 67.31 50.165) (xy 57.785 50.165)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0cc03ee3-93d3-4880-bc75-1faafbb6b19c")
+	)
+	(wire
+		(pts
+			(xy 32.385 38.1) (xy 32.385 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0cf59fbe-aede-4b6f-bb31-c58a65665d67")
+	)
+	(wire
+		(pts
+			(xy 32.385 67.945) (xy 32.385 69.215)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1356d3d4-340f-401b-9a7d-9f8ee2f4c4c9")
+	)
+	(wire
+		(pts
+			(xy 50.165 38.1) (xy 52.705 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20407b46-2bc4-42a5-a11e-3469f61f1b2d")
+	)
+	(wire
+		(pts
+			(xy 166.37 73.66) (xy 175.26 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20f655c7-385e-4a16-8088-1a5a0b9a8252")
+	)
+	(wire
+		(pts
+			(xy 26.035 190.5) (xy 26.035 192.405)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2290d685-eb89-44a6-8274-211a5cbb8b28")
+	)
+	(wire
+		(pts
+			(xy 50.165 45.085) (xy 52.705 45.085)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2386c28a-db66-4340-9f2e-e3a1d3550ece")
+	)
+	(wire
+		(pts
+			(xy 119.38 80.645) (xy 134.62 80.645)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2637cc56-4a1a-4d6e-a55f-813d494a254e")
+	)
+	(wire
+		(pts
+			(xy 190.5 126.365) (xy 166.37 126.365)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2716bb03-fb55-4550-a97d-d4a799bed0e6")
+	)
+	(wire
+		(pts
+			(xy 123.825 83.185) (xy 123.825 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27acc39d-2204-4b4d-b572-08c396c05d25")
+	)
+	(wire
+		(pts
+			(xy 243.84 115.57) (xy 252.73 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d2bf34a-905d-4954-ba4f-bb944189916b")
+	)
+	(wire
+		(pts
+			(xy 166.37 81.28) (xy 175.26 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31a7e1fd-917f-44a5-b333-22e8df4b3142")
+	)
+	(wire
+		(pts
+			(xy 119.38 83.185) (xy 123.825 83.185)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "325b5e38-1d22-4836-b0e7-b4f958be3987")
+	)
+	(wire
+		(pts
+			(xy 166.37 107.315) (xy 188.595 107.315)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ddd20fb-442e-4bbe-8fb2-c9ac94343bc0")
+	)
+	(wire
+		(pts
+			(xy 166.37 88.265) (xy 188.595 88.265)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44c7b9f4-be2e-4d4e-88a2-622349ea4d4f")
+	)
+	(wire
+		(pts
+			(xy 166.37 109.855) (xy 188.595 109.855)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "483de4d8-965a-45d8-9fd1-3d7e32e682eb")
+	)
+	(wire
+		(pts
+			(xy 243.84 102.235) (xy 252.73 102.235)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48bb823d-8b76-4b5e-adf1-dbb791887b49")
+	)
+	(wire
+		(pts
+			(xy 166.37 90.805) (xy 188.595 90.805)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53206ded-68c0-444f-85b6-980aeabb409d")
+	)
+	(wire
+		(pts
+			(xy 36.195 190.5) (xy 36.195 192.405)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5759c938-5012-425f-a05c-61972d85c697")
+	)
+	(wire
+		(pts
+			(xy 123.19 96.52) (xy 118.745 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58b843b9-5dc8-4545-86af-ed5617f87613")
+	)
+	(wire
+		(pts
+			(xy 27.94 79.375) (xy 32.385 79.375)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fa50626-b007-4322-936e-561b88e79ad6")
+	)
+	(wire
+		(pts
+			(xy 27.94 74.295) (xy 43.18 74.295)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a9bdb79-018c-4d0a-992f-5f50f8b8cb76")
+	)
+	(wire
+		(pts
+			(xy 27.305 100.33) (xy 43.18 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e9d4f0c-86d0-4e67-acdd-cd09f5f39162")
+	)
+	(wire
+		(pts
+			(xy 119.38 78.105) (xy 134.62 78.105)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70835db5-49de-4538-bc9c-09c468f33008")
+	)
+	(wire
+		(pts
+			(xy 118.745 101.6) (xy 134.62 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72656bef-49ed-46be-bf10-2cb3e1ad8536")
+	)
+	(wire
+		(pts
+			(xy 243.84 99.695) (xy 252.73 99.695)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73c616d3-9aef-4479-beac-54cbe77ad406")
+	)
+	(wire
+		(pts
+			(xy 50.165 33.02) (xy 52.705 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "744009d9-1535-47fd-b329-f8c77fbda4e9")
+	)
+	(wire
+		(pts
+			(xy 243.84 86.36) (xy 252.73 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7694316b-4668-4d99-96ff-6634f244de9c")
+	)
+	(wire
+		(pts
+			(xy 67.31 38.1) (xy 57.785 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77c2357a-ee7d-483c-8f45-299704d01914")
+	)
+	(wire
+		(pts
+			(xy 118.745 106.68) (xy 123.19 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b96660f-0daa-4dbf-9bb5-40f7d352f720")
+	)
+	(wire
+		(pts
+			(xy 166.37 76.2) (xy 175.26 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7cfd9ec1-73fb-463c-8211-3d7fa598105a")
+	)
+	(wire
+		(pts
+			(xy 27.94 71.755) (xy 43.18 71.755)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fe446be-5b1f-460d-a7d0-819cc693f2e1")
+	)
+	(wire
+		(pts
+			(xy 123.19 106.68) (xy 123.19 108.585)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8275c2fb-efc7-49bd-aa7e-243ca68d0b75")
+	)
+	(wire
+		(pts
+			(xy 166.37 93.345) (xy 188.595 93.345)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8452809c-0386-4002-aaa7-7e3b20c9ff7f")
+	)
+	(wire
+		(pts
+			(xy 27.305 95.25) (xy 43.18 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d44dd1d-da86-4160-86a9-4c893fa5e6bb")
+	)
+	(wire
+		(pts
+			(xy 31.75 91.44) (xy 31.75 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91bae438-f911-44ee-90aa-78f9913b176a")
+	)
+	(wire
+		(pts
+			(xy 123.825 73.025) (xy 119.38 73.025)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9276e759-fc58-4961-95cd-7dd6fb77a283")
+	)
+	(wire
+		(pts
+			(xy 27.305 97.79) (xy 43.18 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92d09878-cb06-42ad-846e-0e6e99231165")
+	)
+	(wire
+		(pts
+			(xy 32.385 69.215) (xy 27.94 69.215)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "980dee68-b27a-4d42-bed1-621005461b58")
+	)
+	(wire
+		(pts
+			(xy 50.165 50.165) (xy 52.705 50.165)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9891d101-9b96-44bb-96d3-382808465619")
+	)
+	(wire
+		(pts
+			(xy 123.19 95.25) (xy 123.19 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99f62910-60a1-4d64-b40c-ae1865275ab5")
+	)
+	(wire
+		(pts
+			(xy 32.385 35.56) (xy 34.925 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9a6434d-fe0f-4ecf-b901-b2f3b9ec6c2f")
+	)
+	(wire
+		(pts
+			(xy 67.31 33.02) (xy 57.785 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afbaa53a-12bc-47d1-9628-a8846b30326c")
+	)
+	(wire
+		(pts
+			(xy 31.75 92.71) (xy 27.305 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b18af917-1b5b-4817-9a73-183ad65b8012")
+	)
+	(wire
+		(pts
+			(xy 243.84 88.9) (xy 252.73 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6ce4b43-0495-4676-aebb-811ba5ca0def")
+	)
+	(wire
+		(pts
+			(xy 31.75 102.87) (xy 31.75 104.775)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8c57cab-9a60-486a-9709-26dd6ff2a92c")
+	)
+	(wire
+		(pts
+			(xy 166.37 95.885) (xy 188.595 95.885)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf50a915-c2c1-436b-974b-a4fbd858c408")
+	)
+	(wire
+		(pts
+			(xy 123.825 71.755) (xy 123.825 73.025)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3e25e33-4357-4055-9985-0f0ae7836e53")
+	)
+	(wire
+		(pts
+			(xy 15.875 190.5) (xy 15.875 192.405)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbbdee27-d189-4b6f-b473-64dc03575cd3")
+	)
+	(wire
+		(pts
+			(xy 27.94 76.835) (xy 43.18 76.835)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0f025b5-0d00-44fa-a7fe-f952b65ce766")
+	)
+	(wire
+		(pts
+			(xy 243.84 113.03) (xy 252.73 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d136ca9d-24f3-4f5c-9aa4-a57711c64466")
+	)
+	(wire
+		(pts
+			(xy 27.305 102.87) (xy 31.75 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d439f568-09a3-4fda-9459-40a6f31ca869")
+	)
+	(wire
+		(pts
+			(xy 166.37 112.395) (xy 188.595 112.395)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db8f0a4b-9eee-4f4b-9ef7-996c61a9ebca")
+	)
+	(wire
+		(pts
+			(xy 32.385 47.625) (xy 34.925 47.625)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de5b1f14-a3ce-425d-b3ac-42e077e22a70")
+	)
+	(wire
+		(pts
+			(xy 118.745 104.14) (xy 134.62 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6d50084-0ed3-4402-ad3c-2f5a3cb6e1f7")
+	)
+	(wire
+		(pts
+			(xy 118.745 99.06) (xy 134.62 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7fb65b8-c6f3-4b12-b69e-b01594144ebe")
+	)
+	(wire
+		(pts
+			(xy 46.355 190.5) (xy 46.355 192.405)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8a5c5b9-edad-4523-8d39-f4fa0da61574")
+	)
+	(wire
+		(pts
+			(xy 67.31 45.085) (xy 57.785 45.085)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcfd0b57-b952-426b-94f0-15d9118723a6")
+	)
+	(label "LIR"
+		(at 175.26 76.2 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "059a00ee-3403-40f5-8d3f-b4f975e1620f")
+	)
+	(label "FRNT"
+		(at 243.84 115.57 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0e6a4149-d9d5-4ea1-bf20-c971e4a46de3")
+	)
+	(label "BRAKE"
+		(at 67.31 50.165 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "280d8a33-b5ca-4b2e-99e5-e7401f44f7b1")
+	)
+	(label "BRAKE"
+		(at 67.31 38.1 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3db57735-a8f4-4b3e-8026-8f63fc23ed66")
+	)
+	(label "ENABLE"
+		(at 175.26 73.66 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3e7eb3cb-39a8-4df7-8354-c8e69de8ee5d")
+	)
+	(label "ENABLE"
+		(at 243.84 99.695 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5ea783b1-c350-494c-b5bd-c274aa82efbc")
+	)
+	(label "RIR"
+		(at 175.26 81.28 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "64a67633-384f-4ce2-a924-4cdaf771eb61")
+	)
+	(label "L_TURN"
+		(at 190.5 126.365 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "67624b0d-d448-444b-b147-1437f20ea3e7")
+	)
+	(label "L_TURN"
+		(at 67.31 33.02 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "883d39dd-0eca-49b2-baf2-cd060b5fde36")
+	)
+	(label "LIR"
+		(at 243.84 88.9 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8aefb516-3ddd-4988-b6ee-5522748650b0")
+	)
+	(label "ENABLE"
+		(at 243.84 113.03 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "90570984-18cd-422a-9506-8d48fb3690a8")
+	)
+	(label "BRAKE"
+		(at 190.5 128.905 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9752f670-59cd-4477-b5fa-540525eb75e0")
+	)
+	(label "RIR"
+		(at 243.84 102.235 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b3153cbf-b7dd-4c39-95d8-3db12b25bcdd")
+	)
+	(label "ENABLE"
+		(at 243.84 86.36 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bc5a036a-6b43-4bcc-a6ad-68018bfc6097")
+	)
+	(label "R_TURN"
+		(at 67.31 45.085 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c578d71c-4a61-42db-a84b-a0fe233ab243")
+	)
+	(label "R_TURN"
+		(at 190.5 123.825 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "daf854f6-6b8d-4f1f-a23b-1997f0bbca8d")
+	)
+	(label "FRNT"
+		(at 175.26 78.74 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ea60b507-e20d-4a77-a53d-0ba41fd5d4bb")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 123.19 108.585 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "02f7d830-b149-4bf4-8365-8fe9b46dcee3")
+		(property "Reference" "#PWR0112"
+			(at 123.19 114.935 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 123.19 112.395 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 123.19 108.585 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 123.19 108.585 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 123.19 108.585 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b8bbbb5d-3aea-4f6c-9a56-472a98ea0c42")
+		)
+		(instances
+			(project "MegaMouse"
+				(path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
+					(reference "#PWR0112")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 46.355 187.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0498b44a-02e6-4167-b27a-04bf22cef299")
+		(property "Reference" "H104"
+			(at 48.895 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 49.53 187.9599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3mm_Pad"
+			(at 46.355 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 46.355 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 46.355 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d23bb499-87a9-4e5d-94d0-69d05625235d")
+		)
+		(instances
+			(project "MegaMouse"
+				(path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
+					(reference "H104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 32.385 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0f540c42-9f87-46a5-8cff-95953fdf9255")
+		(property "Reference" "#PWR0108"
+			(at 32.385 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 32.385 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 32.385 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 32.385 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 32.385 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e31ab33f-8d05-4958-8bc7-38d2415601b9")
+		)
+		(instances
+			(project "MegaMouse"
+				(path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
+					(reference "#PWR0108")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 55.245 45.085 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "11deebd6-4e1d-45e2-ad52-a4b95be88c24")
+		(property "Reference" "R103"
+			(at 55.245 42.545 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1K"
+			(at 55.245 45.085 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 55.245 45.085 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.245 45.085 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 55.245 45.085 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "69216900-dd72-43b8-84d1-d8c4271b4717")
+		)
+		(pin "2"
+			(uuid "18948f04-1b3d-4f8a-bc33-0d17bb99aab5")
+		)
+		(instances
+			(project "MegaMouse"
+				(path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
+					(reference "R103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_4")
+		(lib_id "power:GND")
+		(at 36.195 192.405 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "207e6a95-9526-4f46-91c4-1cebbc09aa1b")
+		(property "Reference" "#PWR0109"
+			(at 36.195 198.755 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 36.195 196.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 36.195 192.405 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.195 192.405 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 36.195 192.405 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "41a58a97-8b4e-444b-800c-aa3b47900c24")
+		)
+		(instances
+			(project "MegaMouse"
+				(path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
+					(reference "#PWR0109")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 31.75 104.775 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2900cf6b-9e80-498f-a2c9-4e121cb25d9a")
+		(property "Reference" "#PWR0104"
+			(at 31.75 111.125 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 31.75 108.585 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 31.75 104.775 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 104.775 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 31.75 104.775 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a2590e68-e372-4fe4-a9af-3500a12888e8")
+		)
+		(instances
+			(project "MegaMouse"
+				(path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
+					(reference "#PWR0104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 123.825 71.755 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3eaf7950-48c9-4556-877b-6ade6dffd68f")
+		(property "Reference" "#PWR0113"
+			(at 123.825 75.565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 123.825 67.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 123.825 71.755 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 123.825 71.755 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 123.825 71.755 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b792d3ed-97b9-4016-a253-8282ae405770")
+		)
+		(instances
+			(project "MegaMouse"
+				(path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
+					(reference "#PWR0113")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 55.245 33.02 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "412f6298-9ff5-4415-94b8-72cb51fdc742")
+		(property "Reference" "R101"
+			(at 55.245 30.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1K"
+			(at 55.245 33.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 55.245 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.245 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 55.245 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f9e3bce7-d7f7-4525-bd91-4124b8243738")
+		)
+		(pin "2"
+			(uuid "8e318cb0-1415-40ea-ad34-df2cdccf159c")
+		)
+		(instances
+			(project "MegaMouse"
+				(path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
+					(reference "R101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x05_Male")
+		(at 114.3 78.105 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4e66837d-f125-492e-9ef1-3191c639b946")
+		(property "Reference" "J104"
+			(at 114.935 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PROG_CONN"
+			(at 114.935 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical"
+			(at 114.3 78.105 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.3 78.105 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 114.3 78.105 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "46a8ffbd-303d-4367-8a46-280435f7fb87")
+		)
+		(pin "2"
+			(uuid "f61d45db-602b-49ea-86c5-2ed0eff9b36b")
+		)
+		(pin "3"
+			(uuid "4f0ae4b5-4a66-4cde-b7f1-84e10d59e401")
+		)
+		(pin "4"
+			(uuid "82d25703-b1c9-40cf-aaef-a56aace78e7c")
+		)
+		(pin "5"
+			(uuid "45cbcf3c-0451-4f70-b91c-60b561bf9d39")
+		)
+		(instances
+			(project "MegaMouse"
+				(path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
+					(reference "J104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 32.385 67.945 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5c334280-559a-46ed-a0b9-04a4f5afb7c2")
+		(property "Reference" "#PWR0107"
+			(at 32.385 71.755 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 32.385 64.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 32.385 67.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 32.385 67.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 32.385 67.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "35bee8e6-2860-4e1a-8897-8fc3e2186756")
+		)
+		(instances
+			(project "MegaMouse"
+				(path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
+					(reference "#PWR0107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 15.875 187.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6078ab87-f88b-4fb5-bc0e-1362b8855326")
+		(property "Reference" "H101"
+			(at 18.415 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 19.05 187.9599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3mm_Pad"
+			(at 15.875 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 15.875 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 15.875 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b5ea94fa-448c-4be5-b577-3fc85f856647")
+		)
+		(instances
+			(project "MegaMouse"
+				(path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
+					(reference "H101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_4")
+		(lib_id "power:GND")
+		(at 15.875 192.405 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "61b3e416-17da-4157-a570-260e090bcdfc")
+		(property "Reference" "#PWR0101"
+			(at 15.875 198.755 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 15.875 196.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 15.875 192.405 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 15.875 192.405 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 15.875 192.405 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dbe1dede-75a5-44b0-9a99-e0ac342ef4d0")
+		)
+		(instances
+			(project "MegaMouse"
+				(path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
+					(reference "#PWR0101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x05_Male")
+		(at 22.225 97.79 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "71676369-a4f8-4289-852f-5c46386fe532")
+		(property "Reference" "J101"
+			(at 22.86 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SHIFT_CONN"
+			(at 22.86 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
+			(at 22.225 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 22.225 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 22.225 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f667a665-78d9-4701-aa57-65c147ca6633")
+		)
+		(pin "2"
+			(uuid "80562dec-008e-4e19-ac70-dbeb152df3d6")
+		)
+		(pin "3"
+			(uuid "5ca69f21-ed38-4b1c-8cf4-7c5f1311ddcf")
+		)
+		(pin "4"
+			(uuid "71900fa9-33ec-4b4d-94d1-8d6874a54789")
+		)
+		(pin "5"
+			(uuid "7ee11932-8c32-4160-9b05-c193676e2496")
+		)
+		(instances
+			(project "MegaMouse"
+				(path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
+					(reference "J101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x05_Male")
+		(at 22.86 74.295 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "78c4d644-02a4-410c-a905-7084841c80fc")
+		(property "Reference" "J102"
+			(at 23.495 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PROG_CONN"
+			(at 23.495 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
+			(at 22.86 74.295 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 22.86 74.295 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 22.86 74.295 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4298d99d-ce4d-4f04-9486-06976bb9d2c8")
+		)
+		(pin "2"
+			(uuid "93f436f5-3567-465e-ab3b-52edda923182")
+		)
+		(pin "3"
+			(uuid "1cbde64d-f007-4508-9561-d605a7e374cf")
+		)
+		(pin "4"
+			(uuid "9db14425-9c0c-4002-9b18-46c332e6b115")
+		)
+		(pin "5"
+			(uuid "f229be08-5fcf-47c7-a942-6336b9afd804")
+		)
+		(instances
+			(project "MegaMouse"
+				(path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
+					(reference "J102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 26.035 187.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8090cf6f-5454-4b1f-8a65-1817431df75e")
+		(property "Reference" "H102"
+			(at 28.575 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 29.21 187.9599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3mm_Pad"
+			(at 26.035 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 26.035 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 26.035 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "be6fc4a2-de34-4ae2-a4e9-180aab5ee0bf")
+		)
+		(instances
+			(project "MegaMouse"
+				(path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
+					(reference "H102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_4")
+		(lib_id "power:GND")
+		(at 46.355 192.405 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8914945c-ed68-425a-b64a-8a74608059f7")
+		(property "Reference" "#PWR0110"
+			(at 46.355 198.755 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 46.355 196.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 46.355 192.405 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 46.355 192.405 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 46.355 192.405 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e25683ee-c1e0-4c5f-9cfa-145806b4e45f")
+		)
+		(instances
+			(project "MegaMouse"
+				(path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
+					(reference "#PWR0110")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AAK")
+		(at 42.545 47.625 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8ed1c7dc-a397-4ebb-878f-88bc55ae0384")
+		(property "Reference" "D102"
+			(at 42.545 53.975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RightTail"
+			(at 42.545 56.515 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MegaMouse:BrakeLight"
+			(at 42.545 47.625 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 42.545 47.625 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 42.545 47.625 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d2429434-6feb-400b-a0fe-257ea52a63d1")
+		)
+		(pin "2"
+			(uuid "c759eb38-c7c5-41dd-809b-240d7ffa6c24")
+		)
+		(pin "3"
+			(uuid "841a11b0-ce7c-49dd-9a5a-a177cc703ffc")
+		)
+		(instances
+			(project "MegaMouse"
+				(path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
+					(reference "D102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 31.75 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9205eadb-db9b-4b5c-90eb-11dfb9d8348a")
+		(property "Reference" "#PWR0103"
+			(at 31.75 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 31.75 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 31.75 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 31.75 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "126c9ab1-ce8c-4a51-b1c4-072c7bc78873")
+		)
+		(instances
+			(project "MegaMouse"
+				(path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
+					(reference "#PWR0103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x05_Male")
+		(at 113.665 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9615da32-019d-46f2-a1f9-ffb7b57d8c9f")
+		(property "Reference" "J103"
+			(at 114.3 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SHIFT_CONN"
+			(at 114.3 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical"
+			(at 113.665 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 113.665 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 113.665 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ca0c5ae8-0693-4e7e-a217-b99d1cbcc536")
+		)
+		(pin "2"
+			(uuid "c06a4f67-c911-48b8-8354-cd798eb57a7d")
+		)
+		(pin "3"
+			(uuid "95ea8064-a45a-4c6f-bfbc-5a7d6dfeeb8f")
+		)
+		(pin "4"
+			(uuid "dd6b436f-4bfa-4459-9852-3c6da8c8b258")
+		)
+		(pin "5"
+			(uuid "52a688f4-8373-491d-9ab5-7c344a833674")
+		)
+		(instances
+			(project "MegaMouse"
+				(path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
+					(reference "J103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 32.385 50.165 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a1a740b8-b765-4086-abec-a1b3f66c4b81")
+		(property "Reference" "#PWR0106"
+			(at 32.385 56.515 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 32.385 53.975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 32.385 50.165 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 32.385 50.165 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 32.385 50.165 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7fcc7b8b-8543-430a-be92-d977db1db500")
+		)
+		(instances
+			(project "MegaMouse"
+				(path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
+					(reference "#PWR0106")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 36.195 187.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bc7b7a6c-a791-4213-80c8-3a2d207596eb")
+		(property "Reference" "H103"
+			(at 38.735 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 39.37 187.9599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3mm_Pad"
+			(at 36.195 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 36.195 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 36.195 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b0eeb922-27a2-47d4-876e-091df0752c41")
+		)
+		(instances
+			(project "MegaMouse"
+				(path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
+					(reference "H103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Dual_AAK")
+		(at 42.545 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ca9b22a2-b92f-47fd-a808-1f1f393a3eb7")
+		(property "Reference" "D101"
+			(at 42.6085 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LeftTail"
+			(at 42.6085 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MegaMouse:BrakeLight"
+			(at 42.545 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 42.545 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 42.545 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c40a0292-c1bb-45de-a890-66f080f4e2b3")
+		)
+		(pin "2"
+			(uuid "7e90564c-7459-4edc-922b-eeca8feeb390")
+		)
+		(pin "3"
+			(uuid "efc19ae4-23bb-40ea-be68-5f224f1738be")
+		)
+		(instances
+			(project "MegaMouse"
+				(path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
+					(reference "D101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 123.825 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d304bd62-eacb-4068-b8e8-c3acddcce127")
+		(property "Reference" "#PWR0114"
+			(at 123.825 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 123.825 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 123.825 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 123.825 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 123.825 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "db2ef6fe-2105-4b6c-8f6b-955fcd99fc8a")
+		)
+		(instances
+			(project "MegaMouse"
+				(path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
+					(reference "#PWR0114")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 123.19 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d71924c1-36a2-4d26-8a2d-8564f2ea8b31")
+		(property "Reference" "#PWR0111"
+			(at 123.19 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 123.19 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 123.19 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 123.19 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 123.19 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f32d33f3-fa0e-49b6-81cb-fc74963e624c")
+		)
+		(instances
+			(project "MegaMouse"
+				(path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
+					(reference "#PWR0111")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_4")
+		(lib_id "power:GND")
+		(at 26.035 192.405 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d757c46a-c627-4cb0-993e-f9b416ea351f")
+		(property "Reference" "#PWR0102"
+			(at 26.035 198.755 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 26.035 196.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 26.035 192.405 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 26.035 192.405 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 26.035 192.405 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "00f3efc2-58b7-4efa-921a-4e2aa32668b9")
+		)
+		(instances
+			(project "MegaMouse"
+				(path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
+					(reference "#PWR0102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 32.385 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dc12de0e-1f5c-4688-af59-4ed5512bcb15")
+		(property "Reference" "#PWR0105"
+			(at 32.385 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 32.385 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 32.385 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 32.385 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 32.385 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e9f5cf7c-0a73-42b6-98c3-ccd8cbeca7cd")
+		)
+		(instances
+			(project "MegaMouse"
+				(path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
+					(reference "#PWR0105")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 55.245 50.165 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ed6de547-7294-4ea3-b2b9-b2ce51c30ee8")
+		(property "Reference" "R104"
+			(at 55.245 47.625 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1K"
+			(at 55.245 50.165 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 55.245 50.165 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.245 50.165 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 55.245 50.165 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "89d4f7a7-6bdc-4229-a999-db45c63da98c")
+		)
+		(pin "2"
+			(uuid "9bacd0ea-3f1d-4324-9e0f-7d100acc9d82")
+		)
+		(instances
+			(project "MegaMouse"
+				(path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
+					(reference "R104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 55.245 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fe48f6dc-8ec8-4a3c-8de0-7dc7d3060555")
+		(property "Reference" "R102"
+			(at 55.245 35.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1K"
+			(at 55.245 38.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 55.245 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.245 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 55.245 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4d9007da-147f-4e78-8c7a-92a37720dc45")
+		)
+		(pin "2"
+			(uuid "0c32d834-066c-4c7f-8334-8995d1ad9aa2")
+		)
+		(instances
+			(project "MegaMouse"
+				(path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
+					(reference "R102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 134.62 70.485)
+		(size 31.75 62.23)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "078d0145-3523-4341-ae01-8b2b5c73f66a")
+		(property "Sheetname" "MCU"
+			(at 134.62 69.7734 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mcu.kicad_sch"
+			(at 134.62 133.2996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "RST" input
+			(at 134.62 80.645 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "716955ab-b906-4d72-9389-c7673b3ba12c")
+		)
+		(pin "RXD" input
+			(at 134.62 78.105 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "58937592-ab87-4fbe-a494-7b3192615027")
+		)
+		(pin "TXD" output
+			(at 134.62 75.565 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "6ac11ebb-3776-4a3e-9740-3a090817163e")
+		)
+		(pin "CLOCK_OUT" output
+			(at 134.62 104.14 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "7527a6df-d8d9-4706-bd23-340e665c3513")
+		)
+		(pin "DATA_OUT" output
+			(at 134.62 99.06 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "bdd26fca-22bf-4322-bb88-49611d25c3f1")
+		)
+		(pin "LATCH_OUT" output
+			(at 134.62 101.6 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "c6b9d898-eb4f-4961-9767-e1acffcbd5fd")
+		)
+		(pin "R_TURN" output
+			(at 166.37 123.825 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "f0b3a301-a819-4baa-bb66-bc194428d7d4")
+		)
+		(pin "L_TURN" output
+			(at 166.37 126.365 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "067e4e17-c365-4fa9-b603-50538223df8a")
+		)
+		(pin "RIR_IN" input
+			(at 166.37 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "610af360-d6e6-432e-9ca3-78c5e4a853ad")
+		)
+		(pin "FRNT_IN" input
+			(at 166.37 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "aaa0bb5f-4546-47da-8e28-af43ac77870e")
+		)
+		(pin "LIR_IN" input
+			(at 166.37 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "a3cc09bf-2cd1-4d1e-a638-a20d26da6ef0")
+		)
+		(pin "ENABLE" output
+			(at 166.37 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "36f84b1b-9eef-4aec-87fb-379a82442efb")
+		)
+		(pin "L_ENC_B" input
+			(at 166.37 90.805 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "7028793e-0f08-4d23-a86f-2e7dc6734d71")
+		)
+		(pin "R_ENC_B" input
+			(at 166.37 109.855 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "87c4a075-31b6-41af-a68c-6e348ded1981")
+		)
+		(pin "R_ENC_A" input
+			(at 166.37 107.315 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "6f667479-d332-492a-b40b-4ff4bd682686")
+		)
+		(pin "L_ENC_A" input
+			(at 166.37 88.265 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "0f85a0c7-fe89-42ef-a55f-76ed7ec96cb9")
+		)
+		(pin "BRAKE" output
+			(at 166.37 128.905 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "9d88b492-48df-4f23-99ed-5bf50dec291c")
+		)
+		(pin "R_MOT_2" output
+			(at 166.37 114.935 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "a0fbd3d2-96f1-4984-bd7a-ee78221e1d8a")
+		)
+		(pin "L_MOT_2" output
+			(at 166.37 95.885 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "f9ed2c49-75e4-4829-b0c3-6258fda098e1")
+		)
+		(pin "L_MOT_1" output
+			(at 166.37 93.345 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "cee184fe-fdd5-4aee-9255-261393a071a5")
+		)
+		(pin "R_MOT_1" output
+			(at 166.37 112.395 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "b8b814fd-8087-4b18-b39e-51934a353900")
+		)
+		(instances
+			(project "MegaMouse"
+				(path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 250.825 15.24)
+		(size 31.115 19.05)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "0db8d490-e421-418e-81d3-9770b4ca9317")
+		(property "Sheetname" "Power"
+			(at 250.825 14.5284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 250.825 34.8746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MegaMouse"
+				(path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 43.18 67.945)
+		(size 26.035 40.005)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "15cf0a12-7ae2-4a92-a2cb-9d52cdb2502c")
+		(property "Sheetname" "Upper Board"
+			(at 43.18 67.2334 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "upperBoard.kicad_sch"
+			(at 43.18 108.5346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "RXD" input
+			(at 43.18 71.755 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "07f99b97-0c2a-4ba8-afb4-1ed2dc951624")
+		)
+		(pin "TXD" output
+			(at 43.18 76.835 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "3d597875-5e33-405e-b1a9-60f98b46ab42")
+		)
+		(pin "RST" output
+			(at 43.18 74.295 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "73c69e3d-bd3b-466a-84b5-5badf8490e7f")
+		)
+		(pin "CLOCK_IN" input
+			(at 43.18 100.33 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "37b61391-5163-4f3c-ab92-875fa4949545")
+		)
+		(pin "LATCH_IN" input
+			(at 43.18 97.79 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "ff579c73-7c8c-4b7d-a304-b46dff82ef2f")
+		)
+		(pin "DATA_IN" input
+			(at 43.18 95.25 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "7fd4e94b-8c6b-4993-81ca-e895ba257839")
+		)
+		(instances
+			(project "MegaMouse"
+				(path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 252.73 97.79)
+		(size 12.7 6.985)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "89b89968-f512-4da7-b85a-b0bd7d595b26")
+		(property "Sheetname" "FR Sensor"
+			(at 252.73 97.0784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ir_sensor.kicad_sch"
+			(at 252.73 105.3596 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "SENSE" output
+			(at 252.73 102.235 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "371117e1-c7e9-47b8-8bc6-1b4751411060")
+		)
+		(pin "ENABLE" input
+			(at 252.73 99.695 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "01b8fd34-1fd4-47d3-8c91-6ec9c3159aa2")
+		)
+		(instances
+			(project "MegaMouse"
+				(path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 252.73 84.455)
+		(size 12.7 6.985)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "bba3cf1b-7655-42d9-87a8-1fb88711e0bf")
+		(property "Sheetname" "FL Sensor"
+			(at 252.73 83.7434 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ir_sensor.kicad_sch"
+			(at 252.73 92.0246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "SENSE" output
+			(at 252.73 88.9 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "31188c9e-e3f9-477b-8eac-5e51bad48a5e")
+		)
+		(pin "ENABLE" input
+			(at 252.73 86.36 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "749d9a7f-e693-4a79-8d0a-cbede247e8e3")
+		)
+		(instances
+			(project "MegaMouse"
+				(path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 188.595 86.36)
+		(size 12.7 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "cab2ae08-2794-43d3-b90a-39adfeeefd96")
+		(property "Sheetname" "LeftMotor"
+			(at 188.595 85.6484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "motor.kicad_sch"
+			(at 188.595 99.6446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "EncA" output
+			(at 188.595 88.265 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "4091c609-80f5-4a6b-ae9c-aad4bba24583")
+		)
+		(pin "EncB" output
+			(at 188.595 90.805 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "13f71e25-9866-4d3d-a80c-65b822068d73")
+		)
+		(pin "IN1" input
+			(at 188.595 93.345 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "b5f0e96b-b2e9-4f2f-b9a2-01125b09f738")
+		)
+		(pin "IN2" input
+			(at 188.595 95.885 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "996befde-da43-4904-bc1b-5ca6fc10f712")
+		)
+		(instances
+			(project "MegaMouse"
+				(path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 252.73 111.125)
+		(size 12.7 6.985)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "e4119054-fd69-4d04-81be-587d775312ca")
+		(property "Sheetname" "FRNT Sensor"
+			(at 252.73 110.4134 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ir_sensor.kicad_sch"
+			(at 252.73 118.6946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "SENSE" output
+			(at 252.73 115.57 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "b0ec8a82-b1c8-4cef-b921-9ddb4516d4de")
+		)
+		(pin "ENABLE" input
+			(at 252.73 113.03 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "d9a8eba7-d740-4925-aa31-f92c136d2f9a")
+		)
+		(instances
+			(project "MegaMouse"
+				(path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 188.595 105.41)
+		(size 12.7 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f3134389-3b86-403d-ae8e-c46efd53e738")
+		(property "Sheetname" "RightMotor"
+			(at 188.595 104.6984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "motor.kicad_sch"
+			(at 188.595 118.6946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "EncA" output
+			(at 188.595 107.315 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "3984ae1e-63db-4e40-83c1-889b0074e50a")
+		)
+		(pin "EncB" output
+			(at 188.595 109.855 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "d4f5b8d7-c67c-4da4-a5f7-8b7a39aae8fd")
+		)
+		(pin "IN1" input
+			(at 188.595 112.395 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "d6d7a152-0e36-4e40-b537-50511b223f87")
+		)
+		(pin "IN2" input
+			(at 188.595 114.935 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "1bdbc499-8d9c-4400-97f1-2647d773e03b")
+		)
+		(instances
+			(project "MegaMouse"
+				(path "/cb242f39-3922-44b0-8f13-dded6a2d135b"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
 )
