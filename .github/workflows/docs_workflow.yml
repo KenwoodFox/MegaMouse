@@ -43,7 +43,7 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: Uniform_and_Style_Guide
+          name: ProjectDocs
           path: Docs/_build/latex/MegaMouse.pdf
           #
 
@@ -55,9 +55,9 @@ jobs:
     needs: [make_docs]
 
     steps:
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v2
         with:
-          name: Uniform_and_Style_Guide
+          name: ProjectDocs
 
       - name: Upload Docs to release
         uses: svenstaro/upload-release-action@v2
