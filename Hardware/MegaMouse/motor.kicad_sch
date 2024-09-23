@@ -993,9 +993,9 @@
 		)
 		(symbol "power:+5V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1093,8 +1093,8 @@
 			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+5V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1113,9 +1113,9 @@
 		)
 		(symbol "power:+BATT"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1213,8 +1213,8 @@
 			(symbol "+BATT_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+BATT"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1233,9 +1233,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1309,8 +1309,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1809,7 +1809,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 139.065 104.775 0)
 			(effects
 				(font
@@ -1878,7 +1878,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 96.52 113.03 0)
 			(effects
 				(font
@@ -1947,7 +1947,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
 			(at 96.52 83.185 0)
 			(effects
 				(font
@@ -2016,7 +2016,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 110.49 113.03 0)
 			(effects
 				(font
@@ -2087,7 +2087,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Brushed DC Motor Driver, PWM Control, 45V, 3.6A, Current limiting, HTSOP-8"
 			(at 96.52 99.695 0)
 			(effects
 				(font
@@ -2180,7 +2180,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 139.065 94.615 0)
 			(effects
 				(font
@@ -2248,7 +2248,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 110.49 109.22 0)
 			(effects
 				(font
@@ -2321,7 +2321,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 149.225 99.695 0)
 			(effects
 				(font
@@ -2478,7 +2478,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 126.365 113.03 0)
 			(effects
 				(font
@@ -2548,7 +2548,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Polarized capacitor, small symbol"
 			(at 126.365 107.95 0)
 			(effects
 				(font

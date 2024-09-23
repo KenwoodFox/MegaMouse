@@ -677,108 +677,12 @@
 				)
 			)
 		)
-		(symbol "GND_4"
-			(power)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "GND_4"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "GND_4_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GND_4_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Mechanical:MountingHole_Pad"
 			(pin_numbers hide)
 			(pin_names
 				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
+			(exclude_from_sim yes)
+			(in_bom no)
 			(on_board yes)
 			(property "Reference" "H"
 				(at 0 6.35 0)
@@ -877,9 +781,9 @@
 		)
 		(symbol "power:+5V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -977,8 +881,8 @@
 			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+5V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -997,9 +901,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1073,8 +977,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1973,7 +1877,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 123.19 108.585 0)
 			(effects
 				(font
@@ -2040,7 +1944,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole with connection"
 			(at 46.355 187.96 0)
 			(effects
 				(font
@@ -2105,7 +2009,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 32.385 81.28 0)
 			(effects
 				(font
@@ -2169,7 +2073,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 55.245 45.085 0)
 			(effects
 				(font
@@ -2194,7 +2098,6 @@
 		)
 	)
 	(symbol
-		(lib_name "GND_4")
 		(lib_id "power:GND")
 		(at 36.195 192.405 0)
 		(unit 1)
@@ -2238,7 +2141,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 36.195 192.405 0)
 			(effects
 				(font
@@ -2303,7 +2206,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 31.75 104.775 0)
 			(effects
 				(font
@@ -2368,7 +2271,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 123.825 71.755 0)
 			(effects
 				(font
@@ -2432,7 +2335,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 55.245 33.02 0)
 			(effects
 				(font
@@ -2577,7 +2480,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 32.385 67.945 0)
 			(effects
 				(font
@@ -2644,7 +2547,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole with connection"
 			(at 15.875 187.96 0)
 			(effects
 				(font
@@ -2666,7 +2569,6 @@
 		)
 	)
 	(symbol
-		(lib_name "GND_4")
 		(lib_id "power:GND")
 		(at 15.875 192.405 0)
 		(unit 1)
@@ -2710,7 +2612,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 15.875 192.405 0)
 			(effects
 				(font
@@ -2931,7 +2833,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole with connection"
 			(at 26.035 187.96 0)
 			(effects
 				(font
@@ -2953,7 +2855,6 @@
 		)
 	)
 	(symbol
-		(lib_name "GND_4")
 		(lib_id "power:GND")
 		(at 46.355 192.405 0)
 		(unit 1)
@@ -2997,7 +2898,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 46.355 192.405 0)
 			(effects
 				(font
@@ -3061,7 +2962,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Dual LED, common cathode on pin 3"
 			(at 42.545 47.625 0)
 			(effects
 				(font
@@ -3132,7 +3033,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 31.75 91.44 0)
 			(effects
 				(font
@@ -3274,7 +3175,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 32.385 50.165 0)
 			(effects
 				(font
@@ -3341,7 +3242,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole with connection"
 			(at 36.195 187.96 0)
 			(effects
 				(font
@@ -3406,7 +3307,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Dual LED, common cathode on pin 3"
 			(at 42.545 35.56 0)
 			(effects
 				(font
@@ -3477,7 +3378,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 123.825 85.09 0)
 			(effects
 				(font
@@ -3542,7 +3443,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 123.19 95.25 0)
 			(effects
 				(font
@@ -3564,7 +3465,6 @@
 		)
 	)
 	(symbol
-		(lib_name "GND_4")
 		(lib_id "power:GND")
 		(at 26.035 192.405 0)
 		(unit 1)
@@ -3608,7 +3508,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 26.035 192.405 0)
 			(effects
 				(font
@@ -3673,7 +3573,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 32.385 38.1 0)
 			(effects
 				(font
@@ -3737,7 +3637,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 55.245 50.165 0)
 			(effects
 				(font
@@ -3804,7 +3704,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 55.245 38.1 0)
 			(effects
 				(font
