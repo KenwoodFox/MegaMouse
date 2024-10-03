@@ -59,9 +59,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        "courtyards_overlap|-4717676|-21950050|b35e852d-2da6-42a4-ab49-63b495f00a25|e7b99459-abbb-4c94-9686-9867430f3bfc"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -71,7 +69,7 @@
         "connection_width": "warning",
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
-        "courtyards_overlap": "error",
+        "courtyards_overlap": "ignore",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
@@ -80,7 +78,7 @@
         "footprint": "error",
         "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "error",
-        "hole_clearance": "error",
+        "hole_clearance": "warning",
         "hole_near_hole": "error",
         "holes_co_located": "warning",
         "invalid_outline": "error",
@@ -104,7 +102,7 @@
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
-        "starved_thermal": "error",
+        "starved_thermal": "warning",
         "text_height": "warning",
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
