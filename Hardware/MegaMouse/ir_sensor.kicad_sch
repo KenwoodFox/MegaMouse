@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "687e48f6-1338-40eb-9ddb-efa8292e72f3")
 	(paper "A4")
 	(title_block
@@ -13,8 +13,12 @@
 	)
 	(lib_symbols
 		(symbol "Device:D_Photo"
-			(pin_numbers hide)
-			(pin_names hide)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -98,7 +102,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy -2.54 0)
+						(xy -0.508 3.302) (xy -2.032 1.778) (xy -2.032 2.286)
 					)
 					(stroke
 						(width 0)
@@ -110,7 +114,7 @@
 				)
 				(polyline
 					(pts
-						(xy -0.508 3.302) (xy -2.032 1.778) (xy -2.032 2.286)
+						(xy 0 0) (xy -2.54 0)
 					)
 					(stroke
 						(width 0)
@@ -183,11 +187,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:LED"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -255,10 +264,22 @@
 			(symbol "LED_0_1"
 				(polyline
 					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27)
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -279,7 +300,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+						(xy -1.27 -1.27) (xy -1.27 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -291,22 +312,10 @@
 				)
 				(polyline
 					(pts
-						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
 					)
 					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
-					)
-					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -352,10 +361,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R_Potentiometer"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -421,12 +433,11 @@
 				)
 			)
 			(symbol "R_Potentiometer_0_1"
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 1.524 0)
-					)
+				(rectangle
+					(start 1.016 2.54)
+					(end -1.016 -2.54)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -445,11 +456,12 @@
 						(type outline)
 					)
 				)
-				(rectangle
-					(start 1.016 2.54)
-					(end -1.016 -2.54)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 1.524 0)
+					)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -477,24 +489,6 @@
 					)
 				)
 				(pin passive line
-					(at 3.81 0 180)
-					(length 1.27)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 0 -3.81 90)
 					(length 1.27)
 					(name "3"
@@ -512,12 +506,35 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -635,6 +652,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Mechanical:MountingHole"
 			(pin_names
@@ -717,12 +735,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+5V"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -794,7 +817,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -806,7 +829,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -837,12 +860,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -933,7 +961,41 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "This direction should be correct,\nas the photodiode accepts more light,\nit conducts backwards like this."
+		(exclude_from_sim no)
+		(at 86.36 117.475 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "128c4f6c-ed67-4ae9-a04d-ecc529706860")
+	)
+	(text "The IR LED emits light whenever\nENABLE is high.\nIt consumes a similar level of current\nas a red LED."
+		(exclude_from_sim no)
+		(at 150.495 119.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d2a9e62f-6341-4a96-a45c-e19010135fce")
+	)
+	(text "In place of the potentiometer.\nYou can install this resistor\nif an appropriate constant value\nis found."
+		(exclude_from_sim no)
+		(at 80.01 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "defb2731-51ff-4f16-90b5-8f5f9ac3246a")
 	)
 	(junction
 		(at 126.365 97.155)
@@ -1107,43 +1169,9 @@
 		)
 		(uuid "ed1f5fbe-af7a-4c19-aa8b-3532c1126732")
 	)
-	(text "This direction should be correct,\nas the photodiode accepts more light,\nit conducts backwards like this."
-		(exclude_from_sim no)
-		(at 86.36 117.475 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "128c4f6c-ed67-4ae9-a04d-ecc529706860")
-	)
-	(text "The IR LED emits light whenever\nENABLE is high.\nIt consumes a similar level of current\nas a red LED."
-		(exclude_from_sim no)
-		(at 150.495 119.38 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d2a9e62f-6341-4a96-a45c-e19010135fce")
-	)
-	(text "In place of the potentiometer.\nYou can install this resistor\nif an appropriate constant value\nis found."
-		(exclude_from_sim no)
-		(at 80.01 87.63 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "defb2731-51ff-4f16-90b5-8f5f9ac3246a")
-	)
 	(hierarchical_label "SENSE"
 		(shape output)
 		(at 129.54 99.695 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1155,7 +1183,6 @@
 	(hierarchical_label "ENABLE"
 		(shape input)
 		(at 151.765 85.725 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1173,7 +1200,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0b65b562-6c81-4476-807c-04cae0560e2d")
-		(property "Reference" "#PWR0802"
+		(property "Reference" "#PWR0702"
 			(at 126.365 119.38 0)
 			(effects
 				(font
@@ -1246,7 +1273,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "525c36e1-ab74-4369-83b6-813761380496")
-		(property "Reference" "R801"
+		(property "Reference" "R701"
 			(at 120.015 87.63 0)
 			(effects
 				(font
@@ -1322,7 +1349,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "572d50a1-b1fb-4941-80fa-5ad5b4c4ef48")
-		(property "Reference" "H801"
+		(property "Reference" "H701"
 			(at 18.415 193.0399 0)
 			(effects
 				(font
@@ -1394,7 +1421,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "578bb644-013b-4ffa-8804-f4a2ec595046")
-		(property "Reference" "RV801"
+		(property "Reference" "RV701"
 			(at 113.03 95.8849 0)
 			(effects
 				(font
@@ -1474,7 +1501,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6fad1b06-3478-47d1-9e0f-4817d6bdbcb9")
-		(property "Reference" "D802"
+		(property "Reference" "D702"
 			(at 153.035 107.95 90)
 			(effects
 				(font
@@ -1549,7 +1576,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8070a8fa-375e-4795-affc-d2d6a245a03a")
-		(property "Reference" "R803"
+		(property "Reference" "R703"
 			(at 151.13 93.98 0)
 			(effects
 				(font
@@ -1624,7 +1651,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a32122d2-b7d5-43a5-81f9-034aa88db979")
-		(property "Reference" "D801"
+		(property "Reference" "D701"
 			(at 115.57 106.045 90)
 			(effects
 				(font
@@ -1699,7 +1726,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d99bea25-b1cd-4196-bc3a-d08a58c47661")
-		(property "Reference" "#PWR0803"
+		(property "Reference" "#PWR0703"
 			(at 146.685 119.38 0)
 			(effects
 				(font
@@ -1772,7 +1799,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "df1b3d90-adad-4fa5-bcb8-2b7bb93c19ca")
-		(property "Reference" "#PWR0801"
+		(property "Reference" "#PWR0701"
 			(at 126.365 81.28 0)
 			(effects
 				(font
@@ -1845,7 +1872,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f6fa6492-2c30-4279-a5e2-1c4e39e907cc")
-		(property "Reference" "R802"
+		(property "Reference" "R702"
 			(at 130.81 93.98 0)
 			(effects
 				(font
