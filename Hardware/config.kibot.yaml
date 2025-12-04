@@ -1,11 +1,11 @@
 kibot:
   version: 1
-# Look into pcb_replace, looks sick! Also sch_replace
 
 preflight:
-  run_erc: false
+  erc: true
+  run_drc:
+    ignore_unconnected: true
   update_xml: true
-  run_drc: false
   check_zone_fills: false
   ignore_unconnected: false
 
@@ -38,7 +38,7 @@ variants:
 outputs:
   - name: "Images"
     comment: "Schematics and media for use in docs"
-    type: pdf_sch_print
+    type: svg_sch_print
 
   - name: "3D Models"
     comment: "3D Models"
@@ -49,13 +49,11 @@ outputs:
     type: render_3d
     options:
       ray_tracing: true
-      rotate_z: 22
-      rotate_x: 4
-      rotate_y: 0
-      move_x: 0
-      move_y: 1
-      zoom: 6
-      wait_render: 50
+      rotate_x: -1
+      rotate_y: 2
+      zoom: 3
+      wait_render: 20
+      width: 800
 
   # ======
   # PCBWay

@@ -1,0 +1,5 @@
+# Sphinx
+sphinx
+sphinx-theme
+sphinx-rtd-theme
+readthedocs-sphinx-search

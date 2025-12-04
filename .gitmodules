@@ -4,3 +4,6 @@
 [submodule "Hardware/MegaMouse/Libraries/Panelization.pretty"]
 	path = Hardware/MegaMouse/Libraries/Panelization.pretty
 	url = https://github.com/madworm/Panelization.pretty
+[submodule "Firmware/sim/lib/mms-cpp"]
+	path = Firmware/sim/lib/mms-cpp
+	url = https://github.com/mackorone/mms-cpp.git
